@@ -12,17 +12,20 @@ public class Ejemplo2_8_4
 		alto = int.Parse(Console.ReadLine());
 		
 		int i = 0;
-		while(i < alto)
+		do
 		{
 			int j = 0; 
-			while(j < ancho)
+			do
 			{
-				Console.Write("*");
+				Console.Write((i+j)%10);
 				j++;
 			}
+			while(j < ancho);
 			Console.Write("\n");
 			i++;
 		}
+		while(i < alto);
+
 		
 		Console.WriteLine("");
 		Console.WriteLine("Adios.");

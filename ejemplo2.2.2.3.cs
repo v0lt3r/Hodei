@@ -13,16 +13,21 @@ public class Ejemplo18
 {
 	public static void Main()
 	{
-		string valida = "secreto";
+		string valida1 = "pedro";
+		string valida2 = "peter";
+		string usuario;
 		string clave;
 		do
 		{
+			Console.Write("Introduzca el nombre de usuario: ");
+			usuario = Console.ReadLine();
 			Console.Write("Introduzca su clave: ");
 			clave = Console.ReadLine();
-			if (clave != valida)
-				Console.WriteLine("No válida!");
+			if ((usuario != valida1) || (clave != valida2))
+				Console.WriteLine("Acceso denegado!");
 		}
-		while (clave != valida);
-		Console.WriteLine("Aceptada.");
+		while ((usuario != valida1) || (clave != valida2));
+		
+		Console.WriteLine("Bienvenido.");
 	}
 }

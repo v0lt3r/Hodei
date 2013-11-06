@@ -11,13 +11,17 @@ public class Ejemplo2_8_4
 		Console.Write("Introduzca el alto del rectangulo: ");
 		alto = int.Parse(Console.ReadLine());
 		
-		for (int i = 0; i < alto ; i++)
+		int i = 0;
+		while(i < alto)
 		{
-			for (int j = 0; j < ancho ; j++)
+			int j = 0; 
+			while(j < ancho)
 			{
 				Console.Write("*");
+				j++;
 			}
 			Console.Write("\n");
+			i++;
 		}
 		
 		Console.WriteLine("");

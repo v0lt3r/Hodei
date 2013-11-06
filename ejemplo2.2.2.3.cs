@@ -17,16 +17,22 @@ public class Ejemplo18
 		string valida2 = "peter";
 		string usuario;
 		string clave;
-		do
+
+		Console.Write("Introduzca el nombre de usuario: ");
+		usuario = Console.ReadLine();
+		Console.Write("Introduzca su clave: ");
+		clave = Console.ReadLine();
+
+		while ((usuario != valida1) || (clave != valida2))
 		{
-			Console.Write("Introduzca el nombre de usuario: ");
-			usuario = Console.ReadLine();
-			Console.Write("Introduzca su clave: ");
-			clave = Console.ReadLine();
-			if ((usuario != valida1) || (clave != valida2))
+			if ((usuario != valida1) || (clave != valida2)) {
 				Console.WriteLine("Acceso denegado!");
+				Console.Write("Introduzca el nombre de usuario: ");
+				usuario = Console.ReadLine();
+				Console.Write("Introduzca su clave: ");
+				clave = Console.ReadLine();
+			}
 		}
-		while ((usuario != valida1) || (clave != valida2));
 		
 		Console.WriteLine("Bienvenido.");
 	}

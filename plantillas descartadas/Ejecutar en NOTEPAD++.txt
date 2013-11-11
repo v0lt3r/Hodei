@@ -1,0 +1,4 @@
+System.Console.ReadKey();
+
+
+using c = System.Console;

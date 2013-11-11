@@ -51,14 +51,30 @@ namespace cualencual
 
 			c.Write("\n");
 
+			int[] var = new int[5];
+			int flag = 0;
+
 			for (int i = 0;i<5;i++)
 			{
 				for (int k = 0;k<5;k++)
 				{
 					if (data[i] == data2[k])
 					{
-						c.Write("{0} \t", data[i]);
+						var[k] = data[i];
+						//	c.Write("{0} \t", data[i]);
 					}
+					
+					for(int j = 0; j < 5; j++)
+						if (data[i] == var[j])
+						{
+							flag = 1;
+						}
+
+					if (flag == 0)
+						c.Write("{0} \t", data[i]);
+					
+					flag = 0;
+
 				}
 			}  
 		}

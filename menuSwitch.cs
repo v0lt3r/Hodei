@@ -25,7 +25,7 @@ namespace arraystruct
             int dato = 0;
             while (true)
             {
-                c.WriteLine("elige una opcion: ");
+                c.WriteLine("Choose an option: ");
                 c.WriteLine("1. Add data for one point");
                 c.WriteLine("2. Display all the entered points");
                 c.WriteLine("3. Calculate (and display) the average values for x and y");
@@ -60,7 +60,7 @@ namespace arraystruct
                             sumax = sumax + puntos[i, 0];
                             sumay = sumay + puntos[i, 1];
                         }
-                        c.WriteLine("El punto medio es x:{0};y:{1}", sumax / dato, sumay / dato);
+                        c.WriteLine("Average point is x:{0};y:{1}", sumax / dato, sumay / dato);
                         c.WriteLine("Press a key");
                         c.ReadKey();
                         c.Clear();

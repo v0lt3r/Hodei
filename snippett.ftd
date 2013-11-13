@@ -1,0 +1,48 @@
+writel
+GLOBAL
+Console.WriteLine()
+[>END<]!$[FingerTextData FingerTextData]@#
+write
+GLOBAL
+Console.Write()
+[>END<]!$[FingerTextData FingerTextData]@#
+readint
+GLOBAL
+= Convert.ToInt32(Console.ReadLine());
+[>END<]!$[FingerTextData FingerTextData]@#
+read
+GLOBAL
+Console.ReadLine()
+[>END<]!$[FingerTextData FingerTextData]@#
+plant
+GLOBAL
+using System;
+
+namespace _____
+{
+	public class _____
+	{
+		public static void Main(string[] args)
+		{
+            
+		}
+	}
+}
+[>END<]!$[FingerTextData FingerTextData]@#
+if
+GLOBAL
+if ()
+{
+
+}
+[>END<]!$[FingerTextData FingerTextData]@#
+for
+GLOBAL
+for (i=0; i<num; i++)
+{
+
+}
+[>END<]!$[FingerTextData FingerTextData]@#
+date
+GLOBAL
+$[![(key)DATE:yyyy/MM/dd]!][>END<]!$[FingerTextData FingerTextData]@#

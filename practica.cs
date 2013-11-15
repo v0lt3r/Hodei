@@ -1,102 +1,103 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using c = System.Console;
 
-namespace practica
+public class practica
 {
-    public class practica
-    {
-        public static void Main(string[] args)
-        {
-            double num1 = 0;
-            double num2 = 0;
-            char operacion;
+	public static void Main(string[] args)
+	{
+		double num1 = 0;
+		double num2 = 0;
+		char operacion = ' ';
 
-            string salir = "";
-            
-            while (!(salir == "fin"))
-            {
-                // Peticion de datos
-               // Console.WriteLine();
-                Console.WriteLine("Introduzca el numero 1");
-                salir = Console.ReadLine();
-                if (salir == "fin")
-                {
-                    num1 = double.Parse(salir);
-                }
-                Console.WriteLine("Introduzca la operacion");
-                string temp = Console.ReadLine(); // Control de input
-                operacion = temp[0];
+		string salir = "";
 
-                if ((operacion != 'R') && (operacion != 'F') && (operacion != 'A'))
-                {
-                    Console.WriteLine("Introduzca el numero 2");
-                    num2 = double.Parse(Console.ReadLine());
-                }
-                Console.WriteLine(); 
-                Console.WriteLine("Resultado:");
-                Console.WriteLine();                      
-                // calculo de operaciones
+		while (salir != "fin")
+		{
+			// Peticion de datos
+			Console.WriteLine("Introduzca el numero 1");
+			salir = Console.ReadLine();
+			if (double.TryParse(salir, out num1))
+			{
+				Console.WriteLine("Introduzca la operacion");
+				string temp = Console.ReadLine(); // Control de input
+				operacion = temp[0];
 
-                switch (operacion)
-                {
-                    case '+':
-                        c.WriteLine(num1 + num2);
-                        break;
+				if ((operacion != 'R') && (operacion != 'F') && (operacion != 'A'))
+				{
+					Console.WriteLine("Introduzca el numero 2");
+					if (!double.TryParse(Console.ReadLine(), out num2))
+						operacion = ' ';
+				}
 
-                    case '-':
-                        c.WriteLine(num1 - num2);
-                        break;
+				Console.WriteLine();
+				Console.WriteLine("Resultado:");
+			}
 
-                    case '*':
-                        c.WriteLine(num1 * num2);
-                        break;
+			// calculo de operaciones
+			switch (operacion)
+			{
+				case '+':
+					c.WriteLine("{0} {1} {2} = {3}", num1, operacion, num2, (num1 + num2));
+				break;
 
-                    case '/':
-                        c.WriteLine(num1 / num2);
-                        break;
+				case '-':
+					c.WriteLine("{0} {1} {2} = {3}", num1, operacion, num2, (num1 - num2));
+				break;
 
-                    case 'P':
-                        int i = 0;
-                        while(i<(int)num2-1)
-                        {
-                            num1 = num1*num1;
-                            i++;
-                        }
-                        c.WriteLine(num1);
-                        break;
+				case '*':
+					c.WriteLine("{0} {1} {2} = {3}", num1, operacion, num2, (num1 * num2));
+				break;
 
-                    case 'R':
-                        num1 = Math.Sqrt(num1);
-                        c.WriteLine(num1);
-                        break;
+				case '/':
+					c.WriteLine("{0} {1} {2} = {3}", num1, operacion, num2, (num1 / num2));
+				break;
 
-                    case 'A':
-                        if (num1 < 0)
-                        {
-                            num1 = num1 * (-1);
-                        }
-                        c.WriteLine(num1);
-                        break;
+				case 'P':
+					int i = 0;
+				double result = num1;
+				while(i < (int)num2-1)
+				{
+					result = result * num1;
+					i++;
+				}
 
-                    case 'F':
-                        int temp3 = (int) num1;
-                        for (int k = (int)num1-1; k > 0; k--)
-                        {
-                            temp3 = temp3 * k;
-                        }
-                        c.WriteLine (temp3);
-                        break;
+				c.WriteLine("{0} {1} {2} = {3}", num1, operacion, (int)num2, result);
+				break;
 
-                    default:
-                        break;
+				case 'R':
+					c.WriteLine("SQRT({0}) = {1}", num1, Math.Sqrt(num1));
+				break;
 
-                }
-                Console.WriteLine(); 
-            }    
-        }
-    }
+				case 'A':
+					double result2 = num1;
+				if (num1 < 0)
+				{
+					result2 = num1 * (-1);
+				}
+
+				c.WriteLine("ABS({0}) = {1}", num1, result2);
+				break;
+
+				case 'F':
+					int temp3 = (int) num1;
+				for (int k = (int)num1-1; k > 0; k--)
+				{
+					temp3 = temp3 * k;
+				}
+
+				c.WriteLine("{0}! = {1}", (int)num1, temp3);
+				break;
+
+				default:
+					if(salir != "fin")
+						Console.WriteLine("Operacion no reconocida");
+				break;
+			}
+
+			Console.WriteLine();
+		}
+		Console.WriteLine("pulse una tecla ... ");
+		Console.ReadKey();
+	}
 }
+

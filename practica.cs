@@ -32,6 +32,8 @@ public class practica
 				Console.WriteLine();
 				Console.WriteLine("Resultado:");
 			}
+			else
+				operacion = ' ';
 
 			// calculo de operaciones
 			switch (operacion)

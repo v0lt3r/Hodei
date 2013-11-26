@@ -35,6 +35,21 @@ namespace ordenacion_de_ints
 				}
 			}
 			while (bandera == 1);
+			
+			// int temp = 0;
+			// for (int i=1; i<array.Length; i++)
+			// {
+				// for (int j=array.Length - 1 ; j >= i; j--)
+				// {
+					// if (array[j - 1].CompareTo(array[j]) > 0)
+					// {
+					   // temp = array[j - 1];
+					   // array[j - 1] = array[j];
+					   // array[j] = temp;
+					// }
+				// }
+			// }
+
 
 				for (int i = 0; i < array.Length; i++)
 			{

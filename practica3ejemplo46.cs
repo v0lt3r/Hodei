@@ -24,6 +24,7 @@ public class Ejemplo46
 			Console.WriteLine("4.- Ver datos de un fichero");
 			Console.WriteLine("5.- Buscar un fragmento");
 			Console.WriteLine("6.- Borrar un dato");
+			Console.WriteLine("7.- Modificar un dato");
 			Console.WriteLine("0.- Salir");
 			opcion = Convert.ToInt32(Console.ReadLine());
 
@@ -34,7 +35,7 @@ public class Ejemplo46
                     if (numeroFichas < 1000)
 				{
 					/* Si queda hueco */
-                        string tempnombre = "";
+					string tempnombre = "";
 					Console.WriteLine("Introduce el nombre del fichero: ");
 					tempnombre = Console.ReadLine();
 					while (tempnombre == "")
@@ -87,7 +88,7 @@ public class Ejemplo46
 				break;
 
 				case 5: // buscar un fragmento
-                    string textobuscar = "";
+				string textobuscar = "";
 				string nombremin = "";
 				Console.WriteLine("escriba un fragmento del texto a buscar: ");
 				textobuscar = Console.ReadLine();
@@ -101,7 +102,7 @@ public class Ejemplo46
 
 				break;
 				case 6: //borrar un dato
-                    string datoborrar = "";
+                string datoborrar = "";
 				int indice = -1;
 				Console.WriteLine("escriba el dato a borrar: ");
 				datoborrar = Console.ReadLine();
@@ -120,9 +121,45 @@ public class Ejemplo46
 					{
 						fichas[i-1] = fichas[i];
 					}
+
 					numeroFichas--;
-                    }
-                    break;
+				}
+
+				break;
+				case 7:
+				int indice2 = 0;
+				Console.WriteLine("Esciba el numero del dato a modificar:");
+				if ((int.TryParse(Console.ReadLine(), out indice2) && indice2 > 0 && indice2 <= numeroFichas))
+				{
+					indice2--;
+					Console.WriteLine("Nombre: {0}; Tamaño: {1} KB", fichas[indice2].nombreFich, fichas[indice2].tamanyo);
+
+					string tempnombre = "";
+					Console.WriteLine("Introduce el nuevo nombre del fichero: ");
+					tempnombre = Console.ReadLine();
+					if(tempnombre != "")
+					{
+						fichas[indice2].nombreFich = tempnombre;
+					}
+
+					string tempstring;
+					int temptamanyo;
+					Console.WriteLine("Introduce el nuevo tamaño en KB: ");
+					tempstring = Console.ReadLine();
+					while ( (!int.TryParse(tempstring, out temptamanyo) || temptamanyo < 0) && tempstring != "")
+					{
+						Console.WriteLine("El tamaño no puede ser negativo: ");
+						tempstring = Console.ReadLine();
+					}
+					if(tempstring != "")
+					{
+						fichas[indice2].tamanyo = temptamanyo;
+					}
+				}
+				else
+					Console.WriteLine("El dato introducido no es valido");
+				break;
+				
                 case 0: /* Salir: avisamos de que salimos */
                     Console.WriteLine("Fin del programa");
                     break;

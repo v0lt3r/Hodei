@@ -11,60 +11,71 @@ namespace ej4433
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Escriba el primer numero");
-			string text = Console.ReadLine();
+			string text1 = Console.ReadLine();
 			Console.WriteLine("Escriba el segundo numero");
 			string text2 = Console.ReadLine();
+			int [] textMod1 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+			int [] textMod2 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-			if (text.Length > text2.Length)
+			int itemp = 0;
+			for (int i = text1.Length - 1; i >= 0; i--)
 			{
-				for (int i = 0; i < (text.Length-text2.Length); i++)
+				textMod1[itemp] = (int)Char.GetNumericValue(text1[i]);
+				if(textMod1[itemp] > 0)
+					itemp++;
+				else
 				{
-					text2.Insert(0, "0");
+					Console.WriteLine("La primera cadena no es un numero");
+					Console.WriteLine("Pulse una tecla");
+					Console.ReadKey();
+					return;
 				}
 			}
 
-			if (text.Length < text2.Length)
+			itemp = 0;
+			for (int i = text2.Length - 1; i >= 0; i--)
 			{
-				for (int i = 0; i < (text2.Length-text.Length); i++)
+				textMod2[itemp] = (int)Char.GetNumericValue(text2[i]);
+				if(textMod2[itemp] > 0)
+					itemp++;
+				else
 				{
-					text.Insert(0, "0");
+					Console.WriteLine("La segunda cadena no es un numero");
+					Console.WriteLine("Pulse una tecla");
+					Console.ReadKey();
+					return;
 				}
-
-				int longitud = text2.Length;
 			}
 
 			int llevada = 0;
-			int num1;
-			int num2;
-			string resultado = "";
+			int [] resultado = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-			for (int i = text.Length - 1; i >= 0; i--)
+			for (int i = 0; i < 30; i++)
 			{
-				
-				num1 = (int)Char.GetNumericValue(text[i]);
-				num2 = (int)Char.GetNumericValue(text2[i]);
-
-				llevada += num1 + num2;
+				llevada += textMod1[i] + textMod2[i];
 				if (llevada > 9)
 				{
-					resultado.Insert(0, (llevada%10).ToString() );
-					llevada -= llevada%10;
+					resultado[i] = (llevada%10);
+					llevada = (llevada/10);
 				}
-
-				// else
-				// {
-					// Console.WriteLine("Una de las dos cadenas no es un numero");
-					// Console.WriteLine("Pulse una tecla");
-					// Console.ReadKey();
-					// return;
-				// }
+				else
+				{
+					resultado[i] = (llevada);
+					llevada = (0);
+				}
 			}
 
-			resultado.Insert(0, (llevada/10).ToString());
+			resultado[30] = (int)(llevada/10);
 
-			for (int i = resultado.Length-1; i >= 0; i--)
+			// para quitar los "0" iniciales
+			int flag = 0;
+			for (int i = 30; i >= 0; i--)
 			{
-				Console.Write(resultado[i]);
+				if(resultado[i] != 0 || flag == 1)
+				{
+					Console.Write(resultado[i]);
+					flag =1;
+				}
 			}
 			Console.WriteLine();
 			

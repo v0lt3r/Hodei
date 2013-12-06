@@ -1,0 +1,7 @@
+i:\Programacion\Mis ejercicios\visual_studio\cielo estrellado\cielo estrellado\bin\Debug\cielo estrellado.exe.config
+F:\Programacion\Mis ejercicios\visual_studio\cielo estrellado\cielo estrellado\bin\Debug\cielo estrellado.exe.config
+F:\Programacion\Mis ejercicios\visual_studio\cielo estrellado\cielo estrellado\bin\Debug\cielo estrellado.exe
+F:\Programacion\Mis ejercicios\visual_studio\cielo estrellado\cielo estrellado\bin\Debug\cielo estrellado.pdb
+F:\Programacion\Mis ejercicios\visual_studio\cielo estrellado\cielo estrellado\obj\Debug\cielo estrellado.csprojResolveAssemblyReference.cache
+F:\Programacion\Mis ejercicios\visual_studio\cielo estrellado\cielo estrellado\obj\Debug\cielo estrellado.exe
+F:\Programacion\Mis ejercicios\visual_studio\cielo estrellado\cielo estrellado\obj\Debug\cielo estrellado.pdb

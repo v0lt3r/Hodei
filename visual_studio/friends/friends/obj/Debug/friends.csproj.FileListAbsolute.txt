@@ -1,0 +1,3 @@
+i:\Programacion\Mis ejercicios\visual_studio\friends\friends\bin\Debug\friends.exe.config
+K:\Programacion\Mis ejercicios\visual_studio\friends\friends\bin\Debug\friends.exe.config
+K:\Programacion\Mis ejercicios\visual_studio\friends\friends\obj\Debug\friends.csprojResolveAssemblyReference.cache

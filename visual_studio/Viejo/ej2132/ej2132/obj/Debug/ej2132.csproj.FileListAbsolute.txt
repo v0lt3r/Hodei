@@ -1,0 +1,6 @@
+L:\Programacion\Mis ejercicios\visual_studio\ej2132\ej2132\bin\Debug\ej2132.exe.config
+L:\Programacion\Mis ejercicios\visual_studio\ej2132\ej2132\bin\Debug\ej2132.exe
+L:\Programacion\Mis ejercicios\visual_studio\ej2132\ej2132\bin\Debug\ej2132.pdb
+L:\Programacion\Mis ejercicios\visual_studio\ej2132\ej2132\obj\Debug\ej2132.csprojResolveAssemblyReference.cache
+L:\Programacion\Mis ejercicios\visual_studio\ej2132\ej2132\obj\Debug\ej2132.exe
+L:\Programacion\Mis ejercicios\visual_studio\ej2132\ej2132\obj\Debug\ej2132.pdb

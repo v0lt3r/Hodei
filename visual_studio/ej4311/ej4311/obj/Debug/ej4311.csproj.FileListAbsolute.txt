@@ -1,0 +1,5 @@
+K:\Programacion\Mis ejercicios\visual_studio\ej4311\ej4311\bin\Debug\ej4311.exe.config
+K:\Programacion\Mis ejercicios\visual_studio\ej4311\ej4311\bin\Debug\ej4311.exe
+K:\Programacion\Mis ejercicios\visual_studio\ej4311\ej4311\bin\Debug\ej4311.pdb
+K:\Programacion\Mis ejercicios\visual_studio\ej4311\ej4311\obj\Debug\ej4311.exe
+K:\Programacion\Mis ejercicios\visual_studio\ej4311\ej4311\obj\Debug\ej4311.pdb

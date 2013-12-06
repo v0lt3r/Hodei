@@ -1,0 +1,1 @@
+i:\Programacion\Mis ejercicios\visual_studio\Ciudad\Ciudad\bin\Debug\Ciudad.exe.config

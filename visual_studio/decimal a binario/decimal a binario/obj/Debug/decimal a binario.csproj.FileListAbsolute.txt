@@ -1,0 +1,1 @@
+i:\Programacion\Mis ejercicios\visual_studio\decimal a binario\decimal a binario\bin\Debug\decimal a binario.exe.config

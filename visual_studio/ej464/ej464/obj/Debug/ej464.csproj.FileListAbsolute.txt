@@ -1,0 +1,9 @@
+i:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\bin\Debug\ej464.exe.config
+I:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\bin\Debug\ej464.exe
+I:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\bin\Debug\ej464.pdb
+I:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\obj\Debug\ej464.csprojResolveAssemblyReference.cache
+I:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\obj\Debug\ej464.exe
+I:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\obj\Debug\ej464.pdb
+F:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\bin\Debug\ej464.exe.config
+F:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\obj\Debug\ej464.exe
+F:\Programacion\Mis ejercicios\visual_studio\ej464\ej464\obj\Debug\ej464.pdb

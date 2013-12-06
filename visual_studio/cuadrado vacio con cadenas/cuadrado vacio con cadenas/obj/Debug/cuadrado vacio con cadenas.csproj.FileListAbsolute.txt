@@ -1,0 +1,6 @@
+i:\Programacion\Mis ejercicios\visual_studio\cuadrado vacio con cadenas\cuadrado vacio con cadenas\bin\Debug\cuadrado vacio con cadenas.exe.config
+i:\Programacion\Mis ejercicios\visual_studio\cuadrado vacio con cadenas\cuadrado vacio con cadenas\bin\Debug\cuadrado vacio con cadenas.exe
+i:\Programacion\Mis ejercicios\visual_studio\cuadrado vacio con cadenas\cuadrado vacio con cadenas\bin\Debug\cuadrado vacio con cadenas.pdb
+i:\Programacion\Mis ejercicios\visual_studio\cuadrado vacio con cadenas\cuadrado vacio con cadenas\obj\Debug\cuadrado vacio con cadenas.csprojResolveAssemblyReference.cache
+i:\Programacion\Mis ejercicios\visual_studio\cuadrado vacio con cadenas\cuadrado vacio con cadenas\obj\Debug\cuadrado vacio con cadenas.exe
+i:\Programacion\Mis ejercicios\visual_studio\cuadrado vacio con cadenas\cuadrado vacio con cadenas\obj\Debug\cuadrado vacio con cadenas.pdb

@@ -1,0 +1,6 @@
+L:\Programacion\Mis ejercicios\visual_studio\plantilla2\plantilla2\bin\Debug\plantilla2.exe.config
+L:\Programacion\Mis ejercicios\visual_studio\plantilla2\plantilla2\bin\Debug\plantilla2.exe
+L:\Programacion\Mis ejercicios\visual_studio\plantilla2\plantilla2\bin\Debug\plantilla2.pdb
+L:\Programacion\Mis ejercicios\visual_studio\plantilla2\plantilla2\obj\Debug\plantilla2.exe
+L:\Programacion\Mis ejercicios\visual_studio\plantilla2\plantilla2\obj\Debug\plantilla2.pdb
+L:\Programacion\Mis ejercicios\visual_studio\plantilla2\plantilla2\obj\Debug\plantilla2.csprojResolveAssemblyReference.cache

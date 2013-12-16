@@ -1,0 +1,6 @@
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\funcion fibonacci\funcion fibonacci\bin\Debug\funcion fibonacci.exe.config
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\funcion fibonacci\funcion fibonacci\bin\Debug\funcion fibonacci.exe
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\funcion fibonacci\funcion fibonacci\bin\Debug\funcion fibonacci.pdb
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\funcion fibonacci\funcion fibonacci\obj\Debug\funcion fibonacci.csprojResolveAssemblyReference.cache
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\funcion fibonacci\funcion fibonacci\obj\Debug\funcion fibonacci.exe
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\funcion fibonacci\funcion fibonacci\obj\Debug\funcion fibonacci.pdb

@@ -1,0 +1,6 @@
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\Triangulo\Triangulo\bin\Debug\Triangulo.exe.config
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\Triangulo\Triangulo\obj\Debug\Triangulo.csprojResolveAssemblyReference.cache
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\Triangulo\Triangulo\bin\Debug\Triangulo.exe
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\Triangulo\Triangulo\bin\Debug\Triangulo.pdb
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\Triangulo\Triangulo\obj\Debug\Triangulo.exe
+C:\Users\volter\Desktop\pinchoGithub\2 trimestre\Triangulo\Triangulo\obj\Debug\Triangulo.pdb

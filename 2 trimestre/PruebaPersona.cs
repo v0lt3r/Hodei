@@ -1,34 +1,36 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class PruebaPersona
+namespace personanamespace
 {
-	public static void Main(string[] args)
+	public class ejercicio
 	{
-		Console.WriteLine("Introduzca nombre 1");
-		Persona Persona1 = new Persona(Console.ReadLine());
-		Persona1.Saludar();
-		
-		Console.WriteLine("Introduzca nombre 2");
-		Persona Persona2 = new Persona(Console.ReadLine());
-		Persona2.Saludar();
-		
-		Console.ReadLine();
-		
+		public static void Main(string[] args)
+		{
+			Persona p1, p2;
+			p1 = new Persona();
+			p2 = new Persona();
+			p1.SetNombre("carlos");
+			p2.SetNombre("juan");
+			p1.Saludar();
+			p2.Saludar();
+		}
 	}
-}
+	
+    class Persona
+    {
+            string Nombre;
+            public void SetNombre(string nombre)
+            {
+                Nombre = nombre;
+            }
 
-
-public class Persona
-{
-	static string Nombre;
-	public Persona(string nombre)
-	{
-		Nombre = nombre;
-	}
-
-	public void Saludar()
-	{
-		Console.WriteLine("hola soy " + Persona.Nombre);
-	}
-
+            public void Saludar()
+            {
+                Console.WriteLine("hola soy " + Nombre);
+            }
+    }
 }

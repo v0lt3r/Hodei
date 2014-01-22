@@ -22,6 +22,7 @@ namespace _6._4._1
         }
         public void fijartemperatura(int temp)
         {
+            temperatura = temp;
         }
     }
 }

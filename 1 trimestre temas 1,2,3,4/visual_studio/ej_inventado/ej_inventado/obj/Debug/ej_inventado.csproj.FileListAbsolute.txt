@@ -1,0 +1,6 @@
+c:\users\cuarto\documents\visual studio 2013\Projects\ej_inventado\ej_inventado\bin\Debug\ej_inventado.exe.config
+c:\users\cuarto\documents\visual studio 2013\Projects\ej_inventado\ej_inventado\bin\Debug\ej_inventado.exe
+c:\users\cuarto\documents\visual studio 2013\Projects\ej_inventado\ej_inventado\bin\Debug\ej_inventado.pdb
+c:\users\cuarto\documents\visual studio 2013\Projects\ej_inventado\ej_inventado\obj\Debug\ej_inventado.csprojResolveAssemblyReference.cache
+c:\users\cuarto\documents\visual studio 2013\Projects\ej_inventado\ej_inventado\obj\Debug\ej_inventado.exe
+c:\users\cuarto\documents\visual studio 2013\Projects\ej_inventado\ej_inventado\obj\Debug\ej_inventado.pdb

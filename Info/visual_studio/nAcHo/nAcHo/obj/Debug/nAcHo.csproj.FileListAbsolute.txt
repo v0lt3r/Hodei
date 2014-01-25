@@ -1,0 +1,6 @@
+i:\Programacion\Mis ejercicios\visual_studio\nAcHo\nAcHo\bin\Debug\nAcHo.exe.config
+i:\Programacion\Mis ejercicios\visual_studio\nAcHo\nAcHo\obj\Debug\nAcHo.csprojResolveAssemblyReference.cache
+i:\Programacion\Mis ejercicios\visual_studio\nAcHo\nAcHo\bin\Debug\nAcHo.exe
+i:\Programacion\Mis ejercicios\visual_studio\nAcHo\nAcHo\bin\Debug\nAcHo.pdb
+i:\Programacion\Mis ejercicios\visual_studio\nAcHo\nAcHo\obj\Debug\nAcHo.exe
+i:\Programacion\Mis ejercicios\visual_studio\nAcHo\nAcHo\obj\Debug\nAcHo.pdb

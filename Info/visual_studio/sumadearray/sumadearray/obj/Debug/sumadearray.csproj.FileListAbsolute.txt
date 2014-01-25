@@ -1,0 +1,6 @@
+i:\Programacion\Mis ejercicios\visual_studio\sumadearray\sumadearray\bin\Debug\sumadearray.exe.config
+i:\Programacion\Mis ejercicios\visual_studio\sumadearray\sumadearray\bin\Debug\sumadearray.exe
+i:\Programacion\Mis ejercicios\visual_studio\sumadearray\sumadearray\bin\Debug\sumadearray.pdb
+i:\Programacion\Mis ejercicios\visual_studio\sumadearray\sumadearray\obj\Debug\sumadearray.csprojResolveAssemblyReference.cache
+i:\Programacion\Mis ejercicios\visual_studio\sumadearray\sumadearray\obj\Debug\sumadearray.exe
+i:\Programacion\Mis ejercicios\visual_studio\sumadearray\sumadearray\obj\Debug\sumadearray.pdb

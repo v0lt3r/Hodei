@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\bin\Debug\calcula.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\bin\Debug\calcula.exe
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\bin\Debug\calcula.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\obj\Debug\calcula.exe
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\obj\Debug\calcula.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\obj\Debug\calcula.csprojResolveAssemblyReference.cache

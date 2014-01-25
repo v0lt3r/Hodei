@@ -1,0 +1,2 @@
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\house\house\bin\Debug\house.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\house\house\obj\Debug\house.csprojResolveAssemblyReference.cache

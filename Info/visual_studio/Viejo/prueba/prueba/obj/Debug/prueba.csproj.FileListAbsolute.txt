@@ -1,0 +1,9 @@
+L:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\bin\Debug\prueba.exe.config
+L:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\bin\Debug\prueba.exe
+L:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\bin\Debug\prueba.pdb
+L:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\obj\Debug\prueba.csprojResolveAssemblyReference.cache
+L:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\obj\Debug\prueba.exe
+L:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\obj\Debug\prueba.pdb
+I:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\bin\Debug\prueba.exe.config
+I:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\obj\Debug\prueba.exe
+I:\Programacion\Mis ejercicios\visual_studio\prueba\prueba\obj\Debug\prueba.pdb

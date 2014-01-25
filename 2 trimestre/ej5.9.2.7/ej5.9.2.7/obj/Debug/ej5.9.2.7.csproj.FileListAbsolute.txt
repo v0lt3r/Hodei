@@ -1,0 +1,6 @@
+\\psf\home\documents\visual studio 2013\Projects\ej5.9.2.7\ej5.9.2.7\bin\Debug\ej5.9.2.7.exe.config
+\\psf\home\documents\visual studio 2013\Projects\ej5.9.2.7\ej5.9.2.7\bin\Debug\ej5.9.2.7.exe
+\\psf\home\documents\visual studio 2013\Projects\ej5.9.2.7\ej5.9.2.7\bin\Debug\ej5.9.2.7.pdb
+\\psf\home\documents\visual studio 2013\Projects\ej5.9.2.7\ej5.9.2.7\obj\Debug\ej5.9.2.7.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\ej5.9.2.7\ej5.9.2.7\obj\Debug\ej5.9.2.7.exe
+\\psf\home\documents\visual studio 2013\Projects\ej5.9.2.7\ej5.9.2.7\obj\Debug\ej5.9.2.7.pdb

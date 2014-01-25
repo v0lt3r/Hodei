@@ -1,0 +1,6 @@
+i:\Programacion\Mis ejercicios\visual_studio\ordenacion de ints\ordenacion de ints\bin\Debug\ordenacion de ints.exe.config
+i:\Programacion\Mis ejercicios\visual_studio\ordenacion de ints\ordenacion de ints\bin\Debug\ordenacion de ints.exe
+i:\Programacion\Mis ejercicios\visual_studio\ordenacion de ints\ordenacion de ints\bin\Debug\ordenacion de ints.pdb
+i:\Programacion\Mis ejercicios\visual_studio\ordenacion de ints\ordenacion de ints\obj\Debug\ordenacion de ints.csprojResolveAssemblyReference.cache
+i:\Programacion\Mis ejercicios\visual_studio\ordenacion de ints\ordenacion de ints\obj\Debug\ordenacion de ints.exe
+i:\Programacion\Mis ejercicios\visual_studio\ordenacion de ints\ordenacion de ints\obj\Debug\ordenacion de ints.pdb

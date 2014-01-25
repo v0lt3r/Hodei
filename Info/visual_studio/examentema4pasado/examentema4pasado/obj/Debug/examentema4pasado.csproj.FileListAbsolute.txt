@@ -1,0 +1,13 @@
+i:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\bin\Debug\examentema4pasado.exe.config
+F:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\bin\Debug\examentema4pasado.exe.config
+F:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\bin\Debug\examentema4pasado.exe
+F:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\bin\Debug\examentema4pasado.pdb
+F:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\obj\Debug\examentema4pasado.csprojResolveAssemblyReference.cache
+F:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\obj\Debug\examentema4pasado.exe
+F:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\obj\Debug\examentema4pasado.pdb
+K:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\bin\Debug\examentema4pasado.exe.config
+K:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\obj\Debug\examentema4pasado.exe
+K:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\obj\Debug\examentema4pasado.pdb
+K:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\bin\Debug\examentema4pasado.exe
+K:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\bin\Debug\examentema4pasado.pdb
+K:\Programacion\Mis ejercicios\visual_studio\examentema4pasado\examentema4pasado\obj\Debug\examentema4pasado.csprojResolveAssemblyReference.cache

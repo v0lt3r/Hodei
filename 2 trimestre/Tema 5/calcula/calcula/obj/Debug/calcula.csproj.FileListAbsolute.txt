@@ -4,3 +4,4 @@ C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\bin\Debug\c
 C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\obj\Debug\calcula.exe
 C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\obj\Debug\calcula.pdb
 C:\Users\volter\Dropbox\mis-ejercicios\visual_studio\calcula\calcula\obj\Debug\calcula.csprojResolveAssemblyReference.cache
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\Tema 5\calcula\calcula\obj\Debug\calcula.pdb

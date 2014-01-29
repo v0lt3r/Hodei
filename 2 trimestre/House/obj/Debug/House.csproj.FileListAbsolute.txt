@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\House\bin\Debug\House.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\House\bin\Debug\House.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\House\bin\Debug\House.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\House\obj\Debug\House.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\House\obj\Debug\House.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\House\obj\Debug\House.pdb

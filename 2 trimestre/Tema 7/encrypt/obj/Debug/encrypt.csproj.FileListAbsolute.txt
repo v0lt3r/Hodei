@@ -1,0 +1,6 @@
+\\psf\home\documents\visual studio 2013\Projects\encrypt\bin\Debug\encrypt.exe.config
+\\psf\home\documents\visual studio 2013\Projects\encrypt\bin\Debug\encrypt.exe
+\\psf\home\documents\visual studio 2013\Projects\encrypt\bin\Debug\encrypt.pdb
+\\psf\home\documents\visual studio 2013\Projects\encrypt\obj\Debug\encrypt.csprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2013\Projects\encrypt\obj\Debug\encrypt.exe
+\\psf\home\documents\visual studio 2013\Projects\encrypt\obj\Debug\encrypt.pdb

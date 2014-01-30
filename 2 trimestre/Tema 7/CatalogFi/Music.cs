@@ -11,14 +11,21 @@ namespace CatalogFi
         protected string singer;
         protected int length;
 
-        public Music(string newName, string newCode, double newSize, string newSinger, int newLength)
+        public Music()
         {
-            name = newName;
-            code = newCode;
-            size = newSize;
             category = "music";
-            singer = newSinger;
-            length = newLength;
+        }
+
+        public new void SetItem()
+        {
+            base.SetItem();
+            
+            Console.WriteLine("Write the singer ");
+            singer = Console.ReadLine();
+
+            Console.WriteLine("Write the length ");
+            if (!int.TryParse(Console.ReadLine(), out length))
+                size = -1;
         }
 
         public override void ShowData()

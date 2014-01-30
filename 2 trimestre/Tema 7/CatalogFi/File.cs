@@ -18,12 +18,18 @@ namespace CatalogFi
             category = "generic";
         }
 
-        public File(string newName, string newCode, double newSize)
+
+        public void SetItem()
         {
-            name = newName;
-            code = newCode;
-            size = newSize;
-            category = "generic";
+            Console.WriteLine("Write the name ");
+            name = Console.ReadLine();
+
+            Console.WriteLine("Write the code ");
+            code = Console.ReadLine();
+
+            Console.WriteLine("Write the size ");
+            if (!double.TryParse(Console.ReadLine(), out size))
+                size = -1;
         }
 
         public virtual void ShowData()

@@ -12,15 +12,22 @@ namespace CatalogFi
         protected string main_actor;
         protected string main_actress;
 
-        public Film(string newName, string newCode, double newSize, string newDirector, string newMain_actor, string newMain_actress)
+        public Film()
         {
-            name = newName;
-            code = newCode;
-            size = newSize;
-            category = "film";
-            director = newDirector;
-            main_actor = newMain_actor;
-            main_actress = newMain_actress;
+            category = "Film";
+        }
+
+        public new void SetItem()
+        {
+            base.SetItem();
+            Console.WriteLine("Write the director ");
+            director = Console.ReadLine();
+
+            Console.WriteLine("Write the main actor ");
+            main_actor = Console.ReadLine();
+
+            Console.WriteLine("Write the main actress ");
+            main_actress = Console.ReadLine();
         }
 
         public override void ShowData()

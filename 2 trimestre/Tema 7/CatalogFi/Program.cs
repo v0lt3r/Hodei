@@ -10,18 +10,15 @@ namespace CatalogFi
     {
         static void Main(string[] args)
         {
-            File[] catalog = new File[100];
+            File[] catalog = new File[10];
+            File[] catalog1 = new Music[10];
+            File[] catalog2 = new Film[10];
+            File[] catalog3 = new CompProgram[10];
             int index = 0;
+            int index1 = 0;
+            int index2 = 0;
+            int index3 = 0;
             int option = -1;
-
-            string name;
-            string code;
-            double size;
-            string director;
-            string main_actor;
-            string main_actress;
-            string singer;
-            int length;
 
             do
             {
@@ -37,70 +34,46 @@ namespace CatalogFi
                 switch (option)
                 {
                     case 1: // Add any kind of data
-                        Console.WriteLine("Write the name ");
-                        name = Console.ReadLine();
 
-                        Console.WriteLine("Write the code ");
-                        code = Console.ReadLine();
-
-                        Console.WriteLine("Write the size ");
-                        if (!double.TryParse(Console.ReadLine(), out size))
-                            size = -1;
-
-                        Console.WriteLine("Write the singer ");
-                        singer = Console.ReadLine();
-
-                        Console.WriteLine("Write the length ");
-                        if (!int.TryParse(Console.ReadLine(), out length))
-                            size = -1;
-
-                        catalog[index] = new Music(name, code, size, singer, length);
-                        index++;
+                        catalog[index1] = new Music();
+                        catalog[index1].SetItem();
+                        index1++;
                         break;
 
                     case 2:
-                        Console.WriteLine("Write the name ");
-                        name = Console.ReadLine();
-
-                        Console.WriteLine("Write the code ");
-                        code = Console.ReadLine();
-
-                        Console.WriteLine("Write the size ");
-                        if (!double.TryParse(Console.ReadLine(), out size))
-                            size = -1;
-
-                        Console.WriteLine("Write the director ");
-                        director = Console.ReadLine();
-
-                        Console.WriteLine("Write the main actor ");
-                        main_actor = Console.ReadLine();
-
-                        Console.WriteLine("Write the main actress ");
-                        main_actress = Console.ReadLine();
-
-                        catalog[index] = new Film(name, code, size, director, main_actor, main_actress);
-                        index++;
+                        catalog[index2] = new Film();
+                        catalog[index2].SetItem();
+                        index2++;
                         break;
 
                     case 3:
-                        Console.WriteLine("Write the name ");
-                        name = Console.ReadLine();
-
-                        Console.WriteLine("Write the code ");
-                        code = Console.ReadLine();
-
-                        Console.WriteLine("Write the size ");
-                        if (!double.TryParse(Console.ReadLine(), out size))
-                            size = -1;
-
-                        catalog[index] = new CompProgram(name, code, size);
-                        index++;
+                        catalog[index3] = new CompProgram();
+                        catalog[index3].SetItem();
+                        index3++;
                         break;
 
                     case 4: // See all stored data
                         for (int i = 0; i < index; i++)
                         {
                             catalog[i].ShowData();
+                            Console.WriteLine();
+                        }
+                        
+                        for (int i = 0; i < index; i++)
+                        {
+                            catalog1[i].ShowData();
+                            Console.WriteLine();
+                        }
+                        
+                        for (int i = 0; i < index; i++)
+                        {
+                            catalog2[i].ShowData();
+                            Console.WriteLine();
+                        }
+
+                        for (int i = 0; i < index; i++)
+                        {
+                            catalog3[i].ShowData();
                             Console.WriteLine();
                         }
                         break;

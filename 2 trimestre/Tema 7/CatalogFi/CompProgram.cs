@@ -8,12 +8,14 @@ namespace CatalogFi
 {
     class CompProgram: File
     {
-        public CompProgram(string newName, string newCode, double newSize)
+        public CompProgram()
         {
-            name = newName;
-            code = newCode;
             category = "CompProgram";
-            size = newSize;
+        }
+
+        public new void SetItem(string newName, string newCode, double newSize)
+        {
+            base.SetItem();
         }
 
         public override void ShowData()

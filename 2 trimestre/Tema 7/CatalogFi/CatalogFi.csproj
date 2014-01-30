@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01CC18AA-F061-40EC-9C20-E8FCA774DD8F}</ProjectGuid>
+    <ProjectGuid>{1AA057AD-210C-4092-98D6-A498EECC2663}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ejcatalog</RootNamespace>
-    <AssemblyName>ejcatalog</AssemblyName>
+    <RootNamespace>CatalogFi</RootNamespace>
+    <AssemblyName>CatalogFi</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputerPrograms.cs" />
-    <Compile Include="Films.cs" />
-    <Compile Include="MusicFiles.cs" />
+    <Compile Include="CompProgram.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="Film.cs" />
+    <Compile Include="Music.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

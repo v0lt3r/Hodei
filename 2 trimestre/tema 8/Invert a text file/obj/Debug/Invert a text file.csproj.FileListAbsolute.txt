@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Invert a text file\bin\Debug\Invert a text file.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Invert a text file\bin\Debug\Invert a text file.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Invert a text file\bin\Debug\Invert a text file.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Invert a text file\obj\Debug\Invert a text file.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Invert a text file\obj\Debug\Invert a text file.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Invert a text file\obj\Debug\Invert a text file.pdb

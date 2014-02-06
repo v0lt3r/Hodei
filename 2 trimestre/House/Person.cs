@@ -9,7 +9,7 @@ namespace House1
     public class Person
     {
         string name;
-        House s1 = new House(area);
+        House s1 = new House();
 
 
         public Person()

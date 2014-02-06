@@ -16,6 +16,8 @@ namespace House1
             h1.GetDoor();
 
             Person juan = new Person("Juan");
+            juan.SetHouse();
+            
         }
     }
 }

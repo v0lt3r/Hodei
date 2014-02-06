@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Ficheros ej 1\bin\Debug\Ficheros ej 1.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Ficheros ej 1\bin\Debug\Ficheros ej 1.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Ficheros ej 1\bin\Debug\Ficheros ej 1.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Ficheros ej 1\obj\Debug\Ficheros ej 1.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Ficheros ej 1\obj\Debug\Ficheros ej 1.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\Ficheros ej 1\obj\Debug\Ficheros ej 1.pdb

@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\More\bin\Debug\More.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\More\bin\Debug\More.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\More\bin\Debug\More.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\More\obj\Debug\More.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\More\obj\Debug\More.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\More\obj\Debug\More.pdb

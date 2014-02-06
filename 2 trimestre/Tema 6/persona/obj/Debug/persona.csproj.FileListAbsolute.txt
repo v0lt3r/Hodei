@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 6\persona\bin\Debug\persona.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 6\persona\bin\Debug\persona.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 6\persona\bin\Debug\persona.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 6\persona\obj\Debug\persona.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 6\persona\obj\Debug\persona.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 6\persona\obj\Debug\persona.pdb

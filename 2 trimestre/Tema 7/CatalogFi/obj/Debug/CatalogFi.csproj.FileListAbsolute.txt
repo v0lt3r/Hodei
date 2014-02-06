@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\CatalogFi\bin\Debug\CatalogFi.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\Tema 7\CatalogFi\obj\Debug\CatalogFi.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\Tema 7\CatalogFi\bin\Debug\CatalogFi.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\Tema 7\CatalogFi\bin\Debug\CatalogFi.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\Tema 7\CatalogFi\obj\Debug\CatalogFi.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\Tema 7\CatalogFi\obj\Debug\CatalogFi.pdb

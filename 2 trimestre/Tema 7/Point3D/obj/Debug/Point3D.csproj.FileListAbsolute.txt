@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\Point3D\bin\Debug\Point3D.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\Point3D\bin\Debug\Point3D.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\Point3D\bin\Debug\Point3D.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\Point3D\obj\Debug\Point3D.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\Point3D\obj\Debug\Point3D.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\Point3D\obj\Debug\Point3D.pdb

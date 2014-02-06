@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\ficheros_pidenombre\bin\Debug\ficheros_pidenombre.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\ficheros_pidenombre\bin\Debug\ficheros_pidenombre.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\ficheros_pidenombre\bin\Debug\ficheros_pidenombre.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\ficheros_pidenombre\obj\Debug\ficheros_pidenombre.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\ficheros_pidenombre\obj\Debug\ficheros_pidenombre.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\ficheros_pidenombre\obj\Debug\ficheros_pidenombre.pdb

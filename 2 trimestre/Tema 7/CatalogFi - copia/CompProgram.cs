@@ -12,5 +12,12 @@ namespace CatalogFi
         {
             category = "CompProgram";
         }
+
+        public override void ShowData()
+        {
+            Console.WriteLine("{0} {1} {2} {3} ", name, code, category, size);
+            Console.WriteLine();
+
+        }
     }
 }

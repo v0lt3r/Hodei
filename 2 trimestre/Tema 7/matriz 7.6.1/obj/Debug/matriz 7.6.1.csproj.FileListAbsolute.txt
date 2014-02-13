@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\matriz 7.6.1\bin\Debug\matriz 7.6.1.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\matriz 7.6.1\obj\Debug\matriz 7.6.1.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\matriz 7.6.1\bin\Debug\matriz 7.6.1.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\matriz 7.6.1\bin\Debug\matriz 7.6.1.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\matriz 7.6.1\obj\Debug\matriz 7.6.1.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 7\matriz 7.6.1\obj\Debug\matriz 7.6.1.pdb

@@ -10,13 +10,16 @@ namespace practica2
 	{
 		static void Main(string[] args)
 		{
+			const int numVehiculos = 10;
 			int opcion;
-			Vehiculo[] parking = new Vehiculo[10];
-			int index;
+			int opcion2;
+			Vehiculo[] parking = new Vehiculo[numVehiculos];
+			int index = 0;
 
-			Moto Replica = new Moto();
-			Replica.GetMatricula();
-			Replica.cambiaNeumaticos(16, "Michelin", "eco");
+			string marca;
+			string modelo;
+			string conductor;
+			int radio;
 
 			do
 			{
@@ -33,24 +36,87 @@ namespace practica2
 				switch (opcion)
 				{
 					case 1:
-						// bool flag = false;
-						// while(flag)
-						// {
-							// if (!SetMatricula(newMatricula))
-							// {
-								// Console.WriteLine("Revisa la matricula");
-								// flag = false;
-							// }
-							// else
-								// flag = true;
-						// }
+						if (index == numVehiculos-1)
+						{
+							Console.WriteLine("Parking completo");
+							break;
+						}
+
+						Console.WriteLine("Quieres anadir un coche (1) o una moto (2)?");
+						while(!int.TryParse(Console.ReadLine(), out opcion2) || (opcion2 < 1 && opcion2 > 2))
+						{
+							Console.WriteLine("Error!!! (Escriba 1 o 2)");
+							Console.WriteLine("Quieres anadir un coche (1) o una moto (2)?");
+						}
+
+						if(opcion2 == 1)
+						{
+							parking[index] = new Coche();
+							// comune
+							Console.WriteLine("Introduzca la Marca");
+							marca = Console.ReadLine();
+							Console.WriteLine("Introduzca el modelo");
+							modelo = Console.ReadLine();
+							Console.WriteLine("Introduzca el nombre del conductor");
+							conductor = Console.ReadLine();
+							Console.WriteLine("Introduzca la matricula (0000 XXX)");
+							parking[index] = new Coche(marca, modelo, Console.ReadLine(), conductor);
+							Console.WriteLine("Introduzca la Marca de los neumaticos");
+							marca = Console.ReadLine();
+							Console.WriteLine("Introduzca el modelo de neumatico");
+							modelo = Console.ReadLine();
+							Console.WriteLine("Introduzca el radio");
+							while(!int.TryParse(Console.ReadLine(), out radio))
+							{
+								Console.WriteLine("Error!!! (Escriba un radio valido)");
+								Console.WriteLine("Introduzca el radio");
+							}
+							parking[index].cambiaNeumaticos(marca, modelo, radio);
+							index++;
+						}
+						else if(opcion2 == 2)
+						{
+							parking[index] = new Moto();
+							// comune
+								Console.WriteLine("Introduzca la Marca");
+							marca = Console.ReadLine();
+							Console.WriteLine("Introduzca el modelo");
+							modelo = Console.ReadLine();
+							Console.WriteLine("Introduzca el nombre del conductor");
+							conductor = Console.ReadLine();
+							Console.WriteLine("Introduzca la matricula (NNNN XXX)");
+							parking[index] = new Moto(marca, modelo, Console.ReadLine(), conductor);
+							Console.WriteLine("Introduzca la Marca de los neumaticos");
+							marca = Console.ReadLine();
+							Console.WriteLine("Introduzca el modelo de neumatico");
+							modelo = Console.ReadLine();
+							Console.WriteLine("Introduzca el radio");
+							while(!int.TryParse(Console.ReadLine(), out radio))
+							{
+								Console.WriteLine("Error!!! (Escriba un radio valido)");
+								Console.WriteLine("Introduzca el radio");
+							}
+							parking[index].cambiaNeumaticos(marca, modelo, radio);
+							index++;
+						}
+
 					break;
 
 					case 2:
-                        break;
+					break;
 
 					case 3:
-                        break;
+					break;
+
+					case 4:
+					break;
+
+					case 5:
+						Console.WriteLine("Hasta luego.");
+					break;
+
+					default:
+					break;
 				}
 
 				if (opcion == 6)
@@ -116,7 +182,7 @@ namespace practica2
 		}
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 
     class Vehiculo
 	{
@@ -140,7 +206,13 @@ namespace practica2
 			conductor = newConductor;
 			arrayrueda = new Rueda[numRuedas];
 			// comprobacion de matricula *********
-			// SetMatricula(newMatricula);
+			if(!SetMatricula(newMatricula))
+			{
+				do {
+					Console.WriteLine("Vuelve a escribir la matricula del vehículo");
+				}
+				while(!SetMatricula(Console.ReadLine()));
+			}
 		}
 
 		// marca
@@ -180,10 +252,11 @@ namespace practica2
                 Char.IsDigit(newMatricula[1]) &&
                 Char.IsDigit(newMatricula[2]) &&
                 Char.IsDigit(newMatricula[3]) &&
-                Char.IsLetter(newMatricula[4]) &&
+				newMatricula[4] != ' ' &&
                 Char.IsLetter(newMatricula[5]) &&
-                Char.IsLetter(newMatricula[6])
-           )
+                Char.IsLetter(newMatricula[6]) &&
+                Char.IsLetter(newMatricula[7])
+          )
 			{
 				matricula = newMatricula;
 				return true;
@@ -207,7 +280,7 @@ namespace practica2
 			conductor = newConductor;
 		}
 
-		public void cambiaNeumaticos(int radio, string marca, string modelo)
+		public void cambiaNeumaticos(string marca, string modelo, int radio)
 		{
 			for (int i = 0; i < numRuedas; i++)
 			{
@@ -230,11 +303,20 @@ namespace practica2
 		{
 			marca = newMarca;
 			modelo = newModelo;
-			matricula = newMatricula;
 			conductor = newConductor;
 			arrayrueda = new Rueda[numRuedas];
+			// comprobacion de matricula *********
+			if(!SetMatricula(newMatricula))
+			{
+				do {
+					Console.WriteLine("Vuelve a escribir la matricula del vehículo");
+				}while(!SetMatricula(Console.ReadLine()));
+			}
+
 		}
 	}
+
+////////////////////////////////////////////////////////////////////////////////////////////
 
     class Moto: Vehiculo
     {
@@ -248,9 +330,15 @@ namespace practica2
         {
             marca = newMarca;
             modelo = newModelo;
-            matricula = newMatricula;
             conductor = newConductor;
             arrayrueda = new Rueda[numRuedas];
+			// comprobacion de matricula *********
+			if(!SetMatricula(newMatricula))
+			{
+				do {
+					Console.WriteLine("Vuelve a escribir la matricula del vehículo");
+				}while(!SetMatricula(Console.ReadLine()));
+			}
         }  
     }
 

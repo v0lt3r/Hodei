@@ -18,9 +18,16 @@ namespace practica2
         {
             marca = newMarca;
             modelo = newModelo;
-            matricula = newMatricula;
             conductor = newConductor;
             arrayrueda = new Rueda[numRuedas];
+            // Comprobacion del input de la matricula
+            if (!SetMatricula(newMatricula))
+            {
+                do
+                {
+                    Console.WriteLine("Error, vuelva a escribir la matricula del vehiculo!!!!");
+                } while (!SetMatricula(Console.ReadLine()));
+            }
         }  
     }
 }

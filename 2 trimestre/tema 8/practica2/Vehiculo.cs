@@ -27,8 +27,14 @@ namespace practica2
             modelo = newModelo;
             conductor = newConductor;
             arrayrueda = new Rueda[numRuedas];
-
-            SetMatricula(newMatricula);
+            // Comprobacion del input de la matricula
+            if(!SetMatricula(newMatricula))
+            {
+                do
+                {
+                    Console.WriteLine("Error, vuelva a escribir la matricula del vehiculo!!!!");
+                } while (!SetMatricula(Console.ReadLine()));
+            }
         }
 
         // marca
@@ -67,9 +73,10 @@ namespace practica2
                 Char.IsDigit(newMatricula[1]) &&
                 Char.IsDigit(newMatricula[2]) &&
                 Char.IsDigit(newMatricula[3]) &&
-                Char.IsLetter(newMatricula[4]) &&
+                newMatricula[4] != ' ' &&
                 Char.IsLetter(newMatricula[5]) &&
-                Char.IsLetter(newMatricula[6])
+                Char.IsLetter(newMatricula[6]) &&
+                Char.IsLetter(newMatricula[7])
             )
             {
                 matricula = newMatricula;
@@ -94,7 +101,7 @@ namespace practica2
             conductor = newConductor;
         }
 
-        public void cambiaNeumaticos(int radio, string marca, string modelo)
+        public void cambiaNeumaticos(string marca, string modelo, int radio)
         {
             for (int i = 0; i < numRuedas; i++)
 			{

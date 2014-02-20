@@ -8,15 +8,15 @@ namespace practica2
 {
     class Program
     {
+        const int numVehiculos = 10;
+        static Vehiculo[] parking = new Vehiculo[numVehiculos];
+        static int index;
+        
         static void Main(string[] args)
         {
             int opcion;
-            Vehiculo[] parking = new Vehiculo[10];
-            int index;
+            int opcion2;
 
-            Moto Replica = new Moto();
-            Replica.GetMatricula();
-            Replica.cambiaNeumaticos(16, "Michelin", "eco");
 
             do
             {
@@ -33,6 +33,29 @@ namespace practica2
                 switch (opcion)
                 {
                     case 1:
+
+                        if (index == numVehiculos-1)
+                        {
+                            Console.WriteLine("parking completo!");
+                            break;
+                        }
+
+                        Console.WriteLine("quieres añadir un coche (1) o una moto (2)?");
+                        while( !int.TryParse(Console.ReadLine(), out opcion2) || (opcion2 < 1 && opcion2 > 2) )
+                        {
+                            Console.WriteLine("Error (escriba 1 o 2)");
+                            Console.WriteLine("quieres añadir un coche (1) o una moto (2)?");
+                        }
+
+                        if (opcion2 == 1)
+                        {
+                        }
+                        else if (opcion2 == 2)
+                        {
+                            parking[index] = new Moto();
+                        }
+                        index++;
+                        
                         break;
 
                     case 2:
@@ -41,7 +64,15 @@ namespace practica2
                     case 3:
                         break;
 
+                    case 4:
+                        break;
 
+                    case 5:
+                        Console.WriteLine("Hasta luego !!!!!!!");
+                        break;
+
+                    default:
+                        break;
                 }
 
                 if (opcion == 6)
@@ -50,23 +81,42 @@ namespace practica2
                     Console.WriteLine("... pulsa una tecla");
                 Console.ReadLine();
 
-            } while (opcion != 5);
+            } while (opcion != 5);          
+        }
 
+        void introducirDatos(int opt)
+        {
+            string marca;
+            string modelo;
+            string conductor;
+            string matricula;
+            int radio;
+
+            if (opt == 1)
+                parking[index] = new Coche();
+            else if (opt == 2)
+                parking[index] = new Moto();
+
+            Console.WriteLine("introduzca la marca");
+            marca = Console.ReadLine();
+            Console.WriteLine("introduzca el modelo");
+            modelo = Console.ReadLine();
+            Console.WriteLine("introduzca el nombre del conductor");
+            conductor = Console.ReadLine();
+            Console.WriteLine("introduzca la matricula (sigue el formato 0000 XXX)");
+            matricula = Console.ReadLine();
             
+            if (opt == 1)
+            {
+                parking[index] = new Coche(marca, modelo, matricula, conductor);
+            }
+            else if (opt == 2)
+            {
+                parking[index] = new Moto(marca, modelo, matricula, conductor);
+            }
         }
     }
 }
 
 
 
-            bool flag = false;
-            while(flag)
-            {
-                if (!SetMatricula(newMatricula))
-                {
-                    Console.WriteLine("Revisa la matricula");
-                    flag = false;
-                }
-                else
-                    flag = true;
-            }

@@ -1,4 +1,8 @@
 *.exe
 *.bak
 *umbs.db
-
+*.dll
+*.nlp
+*.cache
+*.pdb
+*.suo

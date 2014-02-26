@@ -15,6 +15,7 @@ namespace practica2
 		static void Main(string[] args)
 		{
 			int opcion;
+			int temp;
 
 			do
 			{
@@ -32,13 +33,16 @@ namespace practica2
 				{
 					case 1:
 						Console.Clear();
-					if (index == numVehiculos-1)
+					if (index == numVehiculos)
 					{
 						Console.WriteLine("parking completo!");
 						break;
 					}
-
-					introducirDatos(comprobacionNumeros("quieres añadir un coche (1) o una moto (2)?", 2));
+					temp = comprobacionNumeros("quieres añadir un coche (1) o una moto (2)? (e para salir)", 2, 'e');
+					if (temp == 300)
+						break;
+					else
+						introducirDatos(temp);
 					break;
 
 					case 2:
@@ -51,7 +55,11 @@ namespace practica2
 					if (!listaVehiculos())
 						break;
 					Console.WriteLine("");
-					setRuedas(parking[comprobacionNumeros("De que vehiculo quieres cambiar los neumaticos?", index)]);
+					temp = comprobacionNumeros("De que vehiculo quieres cambiar los neumaticos? (e para salir)", index+1, 'e');
+					if (temp == 300)
+						break;
+					else
+						setRuedas(parking[temp-1]);
 					break;
 
 					case 4:
@@ -59,7 +67,11 @@ namespace practica2
 					if (!listaVehiculos())
 						break;
 					Console.WriteLine("");
-					borraVehiculo(comprobacionNumeros("Que vehiculo quieres dar de baja?", index));
+					temp = comprobacionNumeros("Que vehiculo quieres dar de baja? (e para salir)", index+1, 'e');
+					if (temp == 300)
+						break;
+					else
+						borraVehiculo(comprobacionNumeros("Que vehiculo quieres dar de baja? (e para salir)", index+1, 'e'));
 					break;
 
 					case 5:
@@ -83,11 +95,6 @@ namespace practica2
 			string modelo;
 			string conductor;
 			string matricula;
-
-			if (opt == 1)
-				parking[index] = new Coche();
-			else if (opt == 2)
-				parking[index] = new Moto();
 
 			Console.WriteLine("introduzca la marca");
 			marca = Console.ReadLine();
@@ -148,12 +155,17 @@ namespace practica2
 			return true;
 		}
 
-		static int comprobacionNumeros(string mensaje, int max)
+		static int comprobacionNumeros(string mensaje, int max, char esc)
 		{
 			int opcion2;
+			string input;
 
 			Console.WriteLine(mensaje);
-			while (!int.TryParse(Console.ReadLine(), out opcion2) || (opcion2 < 1 || opcion2 > max))
+			input = Console.ReadLine();
+			if (input[0] == esc)
+					return 300;
+			
+			while (!int.TryParse(input, out opcion2) || (opcion2 < 1 || opcion2 > max))
 			{
 				Console.WriteLine("Error (escriba un numero entre 1 y " + max + ")");
 				Console.WriteLine(mensaje);
@@ -164,7 +176,7 @@ namespace practica2
 
 		static void borraVehiculo(int baja)
 		{
-			for (int i = (baja - 1); i < index-1; i++)
+			for (int i = (baja - 1); i < index; i++)
 			{
 				parking[i] = parking[i + 1];
 			}
@@ -239,7 +251,7 @@ namespace practica2
 
 		public Vehiculo()
 		{
-			numRuedas = 5;
+			// numRuedas = 5;
 		}
 
 		public Vehiculo(string newMarca, string newModelo, string newMatricula, string newConductor)
@@ -358,7 +370,7 @@ namespace practica2
 	{
 		public Coche()
 		{
-			numRuedas = 4;
+			// numRuedas = 4;
 		}
 
 		public Coche(string newMarca, string newModelo, string newMatricula, string newConductor)
@@ -373,7 +385,7 @@ namespace practica2
 	{
 		public Moto()
 		{
-			numRuedas = 2;
+			// numRuedas = 2;
 		}
 
 		public Moto(string newMarca, string newModelo, string newMatricula, string newConductor)

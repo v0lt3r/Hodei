@@ -14,7 +14,6 @@ namespace practica2
 
         public Rueda()
         {
-
         }
 
         public Rueda(int newRadio, string newMarca, string newModelo)
@@ -24,7 +23,7 @@ namespace practica2
             modelo = newModelo;
         }
 
-        // marca
+        // ---------marca---------
         public string GetMarca()
         {
             return marca;
@@ -35,7 +34,7 @@ namespace practica2
             marca = newMarca;
         }
 
-        // modelo
+        // ---------modelo---------
         public string GetModelo()
         {
             return modelo;
@@ -46,7 +45,7 @@ namespace practica2
             modelo = newModelo;
         }
 
-        // radio
+        // ---------radio---------
         public int GetRadio()
         {
             return radio;
@@ -56,7 +55,6 @@ namespace practica2
         {
             radio = newRadio;
         }
-
-
     }
+
 }

@@ -1,0 +1,28 @@
+4.01: Crea un programa que pida al usuario su nombre y lo
+escriba al revés (de la última letra a la primera)
+
+4.02: Pide al usuario su nombre y apellidos y muestra sus
+iniciales (en mayúsculas)
+
+4.03: Pide al usuario que escriba dos palabras y muestra qué
+letras tienen en común (en minúsculas)
+
+4.06: Crea un programa que permita al usuario introducir
+números (una cantidad indefinida) y ver sus datos estadísticos (al
+menos, suma, media y cantidad de datos introducidos)
+
+4.08: Crea un programa que permita al usuario introducir
+palabras (una cantidad indefinida) y luego buscar cualquier
+palabra dentro de esa lista e informar de si estaba en ella o no
+
+4.10: Crea una función que escriba el texto que se le indique
+como primer parámetro tantas veces como indique el número que
+se indique como segundo parámetro.Aplícala a un programa que
+pida al usuario su nombre lo escriba 5 veces.
+
+
+4.15: Crea una función que reciba una cadena de texto y la
+devuelva invertida ("Hola" se convertiría en "Hola"). Crea primero
+una versión iterativa y luego una recursiva.
+
+

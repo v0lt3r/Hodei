@@ -25,4 +25,19 @@ pida al usuario su nombre lo escriba 5 veces.
 devuelva invertida ("Hola" se convertiría en "Hola"). Crea primero
 una versión iterativa y luego una recursiva.
 
+import java.io.*;
+
+try {
+BufferedReader entrada =
+new BufferedReader(new InputStreamReader(System.in));
+nombre = entrada.readLine();
+}
+catch (IOException e) {}
+
+try {
+BufferedReader entrada =
+new BufferedReader(new InputStreamReader(System.in));
+numero = Integer.parseInt( entrada.readLine() );
+}
+catch (IOException e) {}
 

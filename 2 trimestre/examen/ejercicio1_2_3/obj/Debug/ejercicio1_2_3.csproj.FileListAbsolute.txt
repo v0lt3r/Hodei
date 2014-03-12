@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\examen\ejercicio1_2_3\bin\Debug\ejercicio1_2_3.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\examen\ejercicio1_2_3\bin\Debug\ejercicio1_2_3.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\examen\ejercicio1_2_3\bin\Debug\ejercicio1_2_3.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\examen\ejercicio1_2_3\obj\Debug\ejercicio1_2_3.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\examen\ejercicio1_2_3\obj\Debug\ejercicio1_2_3.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\examen\ejercicio1_2_3\obj\Debug\ejercicio1_2_3.pdb

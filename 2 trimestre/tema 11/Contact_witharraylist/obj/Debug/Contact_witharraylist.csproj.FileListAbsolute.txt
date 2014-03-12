@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Contact_witharraylist\bin\Debug\Contact_witharraylist.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Contact_witharraylist\bin\Debug\Contact_witharraylist.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Contact_witharraylist\bin\Debug\Contact_witharraylist.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Contact_witharraylist\obj\Debug\Contact_witharraylist.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Contact_witharraylist\obj\Debug\Contact_witharraylist.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Contact_witharraylist\obj\Debug\Contact_witharraylist.pdb

@@ -1,0 +1,2 @@
+juanita;perez;17;pradera
+juan;perez;20;casita

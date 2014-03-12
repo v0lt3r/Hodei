@@ -45,7 +45,7 @@ namespace ej_textfilereader
 
 		static void ShowInfo(int inicio)
 		{
-			Console.WriteLine(inicio + "-" + inicio+20 + "/" myList.Count);
+			Console.WriteLine(inicio + "-" + inicio+20 + "/" + myList.Count);
 		}
 
 		static void DisplayForm(int inicio)

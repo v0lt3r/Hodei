@@ -18,60 +18,39 @@ namespace practica2
 
 			do
 			{
-				Console.Clear();
-				Console.WriteLine("1. Añadir vehiculo");
-				Console.WriteLine("2. Lista vehiculos");
-				Console.WriteLine("3. Cambiar neumaticos");
-				Console.WriteLine("4. Salida Vehiculo");
+				Console.Clear(); // Limpiamos lo que hubiese en la consola y mostramos el menu.
+                Console.WriteLine("1. Añadir vehiculo");
+				Console.WriteLine("2. Listado de vehiculos");
+				Console.WriteLine("3. Cambiar neumaticos a un vehiculo");
+				Console.WriteLine("4. Dar de baja un vehiculo");
 				Console.WriteLine("5. Salir del programa");
 				Console.WriteLine();
-				if (!int.TryParse(Console.ReadLine(), out opcion))
-					opcion = 6;
+				if (!int.TryParse(Console.ReadLine(), out opcion)) // Comprobacion de input, si falla la conversion a int (es decir no es un numero), salimos del menu con opcion=6
+                    opcion = 6;
 
-				switch (opcion)
+				switch (opcion) // Funciones individuales extra por cada case, para mejorar la legibilidad del switch.
 				{
 					case 1:
-						Console.Clear();
-					if (index == numVehiculos-1)
-					{
-						Console.WriteLine("parking completo!");
-						break;
-					}
-
-					introducirDatos(comprobacionNumeros("quieres añadir un coche (1) o una moto (2)?", 2));
+                        AñadeVehiculo();
 					break;
-
 					case 2:
-						Console.Clear();
-					listaVehiculos();
+                        Lista();
 					break;
-
 					case 3:
-						Console.Clear();
-					if (!listaVehiculos())
-						break;
-					Console.WriteLine("");
-					setRuedas(parking[comprobacionNumeros("De que vehiculo quieres cambiar los neumaticos?", index)]);
+                        CambiarNeumaticos();
 					break;
-
 					case 4:
-						Console.Clear();
-					if (!listaVehiculos())
-						break;
-					Console.WriteLine("");
-					borraVehiculo(comprobacionNumeros("Que vehiculo quieres dar de baja?", index));
+                        DarBaja();
 					break;
-
 					case 5:
-						Console.WriteLine("Hasta luego !!!!!!!");
+                        Console.WriteLine("Hasta luego !!!!!!!");
 					break;
-
-					default:
-						Console.WriteLine("opcion no valida!");
+					default: // Si escribimos otra opcion, saltara el mensaje.
+                        Console.WriteLine("opcion no valida!");
 					break;
 				}
 
-				Console.WriteLine("... pulsa una tecla");
+				Console.WriteLine("... pulsa una tecla para volver al menú");
 				Console.ReadKey();
 			}
 			while (opcion != 5);
@@ -83,11 +62,6 @@ namespace practica2
 			string modelo;
 			string conductor;
 			string matricula;
-
-			if (opt == 1)
-				parking[index] = new Coche();
-			else if (opt == 2)
-				parking[index] = new Moto();
 
 			Console.WriteLine("introduzca la marca");
 			marca = Console.ReadLine();
@@ -120,7 +94,7 @@ namespace practica2
 			modelo = Console.ReadLine();
 
 			Console.WriteLine("Introduzca el radio");
-			while (!int.TryParse(Console.ReadLine(), out radio))
+			while (!int.TryParse(Console.ReadLine(), out radio)) // Control de input con tryparse
 			{
 				Console.WriteLine("Error!!! (Escriba un radio valido)");
 				Console.WriteLine("Introduzca el radio");
@@ -148,13 +122,18 @@ namespace practica2
 			return true;
 		}
 
-		static int comprobacionNumeros(string mensaje, int max)
+		static int comprobacionNumeros(string mensaje, int max, char esc)
 		{
 			int opcion2;
+			string input;
 
 			Console.WriteLine(mensaje);
-			while (!int.TryParse(Console.ReadLine(), out opcion2) || (opcion2 < 1 || opcion2 > max))
+			while(!int.TryParse(input = Console.ReadLine(), out opcion2) || (opcion2 < 1 || opcion2 > max))
 			{
+				if (String.IsNullOrEmpty(input))
+					;
+				else if (input[0] == esc)
+					return 300;
 				Console.WriteLine("Error (escriba un numero entre 1 y " + max + ")");
 				Console.WriteLine(mensaje);
 			}
@@ -164,138 +143,193 @@ namespace practica2
 
 		static void borraVehiculo(int baja)
 		{
-			for (int i = (baja - 1); i < index-1; i++)
+			for (int i = baja; i < index; i++)
 			{
 				parking[i] = parking[i + 1];
 			}
 
 			index--;
 		}
-	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+		static void AñadeVehiculo()
+		{
+			int temp;
+
+			Console.Clear();
+			if (index == numVehiculos)
+			{
+				Console.WriteLine("Lo sentimos, el parking está completo!");
+				return;
+			}
+
+			temp = comprobacionNumeros("¿quieres añadir un coche (1) o una moto (2)? (e para salir)", 2, 'e');
+			if (temp == 300)
+				return;
+			else
+				introducirDatos(temp);
+		}
+
+		static void Lista()
+		{
+			Console.Clear();
+			listaVehiculos();
+		}
+
+		static void CambiarNeumaticos()
+		{
+			int temp;
+
+			Console.Clear();
+			if (!listaVehiculos())
+				return;
+			Console.WriteLine("");
+
+			temp = comprobacionNumeros("¿A que vehiculo quieres cambiar los neumaticos? (e para salir)", index, 'e');
+			if (temp == 300)
+				return;
+			else
+				setRuedas(parking[temp-1]);
+		}
+
+		static void DarBaja()
+		{
+			int temp;
+			
+            Console.Clear();
+            if (!listaVehiculos())
+                return;
+            Console.WriteLine("");
+
+			temp = comprobacionNumeros("¿Que vehiculo quieres dar de baja? (e para salir)", index, 'e');
+			if (temp == 300)
+				return;
+			else
+				borraVehiculo(temp-1);
+		}
+    }
+
 
     class Rueda
-	{
-		protected int radio;
-		protected string marca;
-		protected string modelo;
+    {
+        protected int radio;
+        protected string marca;
+        protected string modelo;
 
-		public Rueda()
-		{
-		}
+        public Rueda()
+        {
+        }
 
-		public Rueda(int newRadio, string newMarca, string newModelo)
-		{
-			radio = newRadio;
-			marca = newMarca;
-			modelo = newModelo;
-		}
+        public Rueda(int newRadio, string newMarca, string newModelo)
+        {
+            radio = newRadio;
+            marca = newMarca;
+            modelo = newModelo;
+        }
 
-		// marca
+        // ---------marca---------
         public string GetMarca()
-		{
-			return marca;
-		}
+        {
+            return marca;
+        }
 
-		public void SetMarca(string newMarca)
-		{
-			marca = newMarca;
-		}
+        public void SetMarca(string newMarca)
+        {
+            marca = newMarca;
+        }
 
-		// modelo
+        // ---------modelo---------
         public string GetModelo()
-		{
-			return modelo;
-		}
+        {
+            return modelo;
+        }
 
-		public void SetModelo(string newModelo)
-		{
-			modelo = newModelo;
-		}
+        public void SetModelo(string newModelo)
+        {
+            modelo = newModelo;
+        }
 
-		// radio
+        // ---------radio---------
         public int GetRadio()
-		{
-			return radio;
-		}
+        {
+            return radio;
+        }
 
-		public void SetRadio(int newRadio)
-		{
-			radio = newRadio;
-		}
-	}
+        public void SetRadio(int newRadio)
+        {
+            radio = newRadio;
+        }
+    }
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+
 
     class Vehiculo
-	{
-		protected int numRuedas;
-		protected string marca;
-		protected string modelo;
-		protected string matricula;
-		protected string conductor;
-		protected Rueda[] arrayrueda;
+    {
+        protected int numRuedas;
+        protected string marca;
+        protected string modelo;
+        protected string matricula;
+        protected string conductor;
+        protected Rueda[] arrayrueda;
 
-		public Vehiculo()
-		{
-			numRuedas = 5;
-		}
+        public Vehiculo()
+        {
+            numRuedas = 5;
+        }
 
-		public Vehiculo(string newMarca, string newModelo, string newMatricula, string newConductor)
-		{
-			numRuedas = 5;
-			initialSettings(newMarca, newModelo, newMatricula, newConductor);
-		}
+        public Vehiculo(string newMarca, string newModelo, string newMatricula, string newConductor)
+        {
+            numRuedas = 5;
+            initialSettings(newMarca, newModelo, newMatricula, newConductor);
+        }
 
-		protected void initialSettings(string newMarca, string newModelo, string newMatricula, string newConductor)
-		{
-			arrayrueda = new Rueda[numRuedas];
-			marca = newMarca;
-			modelo = newModelo;
-			conductor = newConductor;
-			// Comprobacion del input de la matricula
-            if(!SetMatricula(newMatricula))
-			{
-				do
-				{
-					Console.WriteLine("Error, vuelva a escribir la matricula del vehiculo!!!!");
-				}
-				while (!SetMatricula(Console.ReadLine()));
-			}
-		}
+        protected void initialSettings(string newMarca, string newModelo, string newMatricula, string newConductor)
+        {
+            arrayrueda = new Rueda[numRuedas];
+            marca = newMarca;
+            modelo = newModelo;
+            conductor = newConductor;
+            // Comprobacion del input de la matricula
+            if (!SetMatricula(newMatricula))
+            {
+                do
+                {
+                    Console.WriteLine("Error, vuelva a escribir la matricula del vehiculo!!!!");
+                }
+                while (!SetMatricula(Console.ReadLine()));
+            }
+        }
 
-		// marca
+        // ---------marca---------
         public string GetMarca()
-		{
-			return marca;
-		}
+        {
+            return marca;
+        }
 
-		public void SetMarca(string newMarca)
-		{
-			marca = newMarca;
-		}
+        public void SetMarca(string newMarca)
+        {
+            marca = newMarca;
+        }
 
-		// modelo
+        // ---------modelo---------
         public string GetModelo()
-		{
-			return modelo;
-		}
+        {
+            return modelo;
+        }
 
-		public void SetModelo(string newModelo)
-		{
-			modelo = newModelo;
-		}
+        public void SetModelo(string newModelo)
+        {
+            modelo = newModelo;
+        }
 
-		// matricula
+        // ---------matricula---------
         public string GetMatricula()
-		{
-			return matricula;
-		}
+        {
+            return matricula;
+        }
 
-		public Boolean SetMatricula(string newMatricula)
-		{
-			if (
+        public Boolean SetMatricula(string newMatricula)
+        {
+            if ( // Condiciones a cumplirse
                 newMatricula.Length == 8 &&
                 Char.IsDigit(newMatricula[0]) &&
                 Char.IsDigit(newMatricula[1]) &&
@@ -305,85 +339,82 @@ namespace practica2
                 Char.IsLetter(newMatricula[5]) &&
                 Char.IsLetter(newMatricula[6]) &&
                 Char.IsLetter(newMatricula[7])
-				)
-			{
-				matricula = newMatricula;
-				return true;
-			}
-			else
-			{
-				matricula = "ERROR";
-				Console.WriteLine("Revisa la matricula");
-				return false;
-			}
-		}
+                )
+            {
+                matricula = newMatricula;
+                return true; //si se cumplen devolvemos true
+            }
+            else // en cualquier otro caso, la matricula no es valida
+            {
+                matricula = "ERROR";
+                Console.WriteLine("Revisa la matricula");
+                return false;
+            }
+        }
 
-		// conductor
+        // ---------conductor---------
         public string GetConductor()
-		{
-			return conductor;
-		}
+        {
+            return conductor;
+        }
 
-		public void SetConductor(string newConductor)
-		{
-			conductor = newConductor;
-		}
+        public void SetConductor(string newConductor)
+        {
+            conductor = newConductor;
+        }
 
-		public void cambiaNeumaticos(string marca, string modelo, int radio)
-		{
-			for (int i = 0; i < numRuedas; i++)
-			{
-				arrayrueda[i] = new Rueda(radio, marca, modelo);
-			}
-		}
+        public void cambiaNeumaticos(string marca, string modelo, int radio)
+        {
+            for (int i = 0; i < numRuedas; i++)
+            {
+                arrayrueda[i] = new Rueda(radio, marca, modelo);
+            }
+        }
 
-		public string showRuedas()
-		{
-			string temp = "";
+        public string showRuedas()
+        {
+            string temp = "";
 
-			for (int i = 0; i < numRuedas; i++)
-			{
-				temp += "\tRueda" + (i + 1) + ": " + arrayrueda[i].GetMarca() + "| " +
-				arrayrueda[i].GetModelo() + "| " +
-				arrayrueda[i].GetRadio() + "\n";
-			}
+            for (int i = 0; i < numRuedas; i++)
+            {
+                temp += "\tRueda" + (i + 1) + ": " + arrayrueda[i].GetMarca() + "| " +
+                arrayrueda[i].GetModelo() + "| " +
+                arrayrueda[i].GetRadio() + "\n";
+            }
 
-			return temp;
-		}
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-    class Coche: Vehiculo
-	{
-		public Coche()
-		{
-			numRuedas = 4;
-		}
-
-		public Coche(string newMarca, string newModelo, string newMatricula, string newConductor)
-		{
-			numRuedas = 4;
-			initialSettings(newMarca, newModelo, newMatricula, newConductor);		}
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-    class Moto: Vehiculo
-	{
-		public Moto()
-		{
-			numRuedas = 2;
-		}
-
-		public Moto(string newMarca, string newModelo, string newMatricula, string newConductor)
-		{
-			numRuedas = 2;
-			initialSettings(newMarca, newModelo, newMatricula, newConductor);
-		}  
+            return temp;
+        }
     }
 
+
+
+    class Coche : Vehiculo
+    {
+        public Coche()
+        {
+            numRuedas = 4;
+        }
+
+        public Coche(string newMarca, string newModelo, string newMatricula, string newConductor)
+        {
+            numRuedas = 4;
+            initialSettings(newMarca, newModelo, newMatricula, newConductor);
+        }
+    }
+
+
+
+    class Moto : Vehiculo
+    {
+        public Moto()
+        {
+            numRuedas = 2;
+        }
+
+        public Moto(string newMarca, string newModelo, string newMatricula, string newConductor)
+        {
+            numRuedas = 2;
+            initialSettings(newMarca, newModelo, newMatricula, newConductor);
+        }
+    }
 }
-
-
-

@@ -7,3 +7,4 @@ K:\Programacion\Mis ejercicios\visual_studio\practica3_ej454\obj\Debug\practica3
 I:\Programacion\Mis ejercicios\visual_studio\practica3\bin\Debug\practica3_ej454.exe.config
 I:\Programacion\Mis ejercicios\visual_studio\practica3\obj\Debug\practica3_ej454.exe
 I:\Programacion\Mis ejercicios\visual_studio\practica3\obj\Debug\practica3_ej454.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\1 trimestre temas 1,2,3,4\visual_studio\practica3\obj\Debug\practica3_ej454.pdb

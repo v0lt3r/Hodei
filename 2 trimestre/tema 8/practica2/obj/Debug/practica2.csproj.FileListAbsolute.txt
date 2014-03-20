@@ -1,1 +1,4 @@
 C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 8\practica2\bin\Debug\practica2.exe.config
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\tema 8\practica2\bin\Debug\practica2.exe.config
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\tema 8\practica2\obj\Debug\practica2.exe
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\tema 8\practica2\obj\Debug\practica2.pdb

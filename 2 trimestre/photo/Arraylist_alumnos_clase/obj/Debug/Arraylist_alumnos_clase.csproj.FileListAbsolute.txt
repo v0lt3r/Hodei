@@ -1,0 +1,6 @@
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\Arraylist_alumnos_clase\bin\Debug\Arraylist_alumnos_clase.exe.config
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\Arraylist_alumnos_clase\bin\Debug\Arraylist_alumnos_clase.exe
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\Arraylist_alumnos_clase\bin\Debug\Arraylist_alumnos_clase.pdb
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\Arraylist_alumnos_clase\obj\Debug\Arraylist_alumnos_clase.csprojResolveAssemblyReference.cache
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\Arraylist_alumnos_clase\obj\Debug\Arraylist_alumnos_clase.exe
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\Arraylist_alumnos_clase\obj\Debug\Arraylist_alumnos_clase.pdb

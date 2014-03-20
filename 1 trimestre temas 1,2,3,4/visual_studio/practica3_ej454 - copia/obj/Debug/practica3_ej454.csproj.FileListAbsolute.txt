@@ -4,3 +4,4 @@ K:\Programacion\Mis ejercicios\visual_studio\practica3_ej454\bin\Debug\practica3
 K:\Programacion\Mis ejercicios\visual_studio\practica3_ej454\obj\Debug\practica3_ej454.csprojResolveAssemblyReference.cache
 K:\Programacion\Mis ejercicios\visual_studio\practica3_ej454\obj\Debug\practica3_ej454.exe
 K:\Programacion\Mis ejercicios\visual_studio\practica3_ej454\obj\Debug\practica3_ej454.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\1 trimestre temas 1,2,3,4\visual_studio\practica3_ej454 - copia\obj\Debug\practica3_ej454.pdb

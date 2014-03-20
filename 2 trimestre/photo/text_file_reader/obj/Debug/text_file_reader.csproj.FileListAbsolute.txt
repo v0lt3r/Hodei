@@ -1,0 +1,6 @@
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\text_file_reader\bin\Debug\text_file_reader.exe.config
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\text_file_reader\obj\Debug\text_file_reader.csprojResolveAssemblyReference.cache
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\text_file_reader\bin\Debug\text_file_reader.exe
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\text_file_reader\bin\Debug\text_file_reader.pdb
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\text_file_reader\obj\Debug\text_file_reader.exe
+C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\text_file_reader\obj\Debug\text_file_reader.pdb

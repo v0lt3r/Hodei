@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\practica3_3tri\practica3_3tri\bin\Debug\practica3_3tri.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\practica3_3tri\practica3_3tri\bin\Debug\practica3_3tri.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\practica3_3tri\practica3_3tri\bin\Debug\practica3_3tri.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\practica3_3tri\practica3_3tri\obj\Debug\practica3_3tri.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\practica3_3tri\practica3_3tri\obj\Debug\practica3_3tri.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\practica3_3tri\practica3_3tri\obj\Debug\practica3_3tri.pdb

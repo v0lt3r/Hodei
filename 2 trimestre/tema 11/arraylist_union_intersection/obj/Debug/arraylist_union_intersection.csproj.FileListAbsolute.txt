@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_union_intersection\bin\Debug\arraylist_union_intersection.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_union_intersection\bin\Debug\arraylist_union_intersection.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_union_intersection\bin\Debug\arraylist_union_intersection.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_union_intersection\obj\Debug\arraylist_union_intersection.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_union_intersection\obj\Debug\arraylist_union_intersection.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_union_intersection\obj\Debug\arraylist_union_intersection.pdb

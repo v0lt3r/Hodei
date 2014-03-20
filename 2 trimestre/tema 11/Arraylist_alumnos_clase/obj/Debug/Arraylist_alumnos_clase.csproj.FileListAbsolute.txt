@@ -7,3 +7,6 @@ C:\Users\cuarto\Dropbox\mis-ejercicios\2 trimestre\photo\Arraylist_alumnos_clase
 C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Arraylist_alumnos_clase\bin\Debug\Arraylist_alumnos_clase.exe.config
 C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Arraylist_alumnos_clase\obj\Debug\Arraylist_alumnos_clase.exe
 C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\Arraylist_alumnos_clase\obj\Debug\Arraylist_alumnos_clase.pdb
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\Arraylist_alumnos_clase\bin\Debug\Arraylist_alumnos_clase.exe.config
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\Arraylist_alumnos_clase\obj\Debug\Arraylist_alumnos_clase.exe
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\Arraylist_alumnos_clase\obj\Debug\Arraylist_alumnos_clase.pdb

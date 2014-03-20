@@ -16,45 +16,48 @@ namespace Examen_tema8_ej1
 		{
 			Console.WriteLine("Escriba el nombre del fichero a analizar");
 			string nombre_fichero = Console.ReadLine();
-			try{
-            fichero = File.OpenText(nombre_fichero);
-            fichero2 = File.CreateText(nombre_fichero.Substring(0, nombre_fichero.Length-4) + ".conv");
-            }
-            catch(Exception e){}
+			try {
+				fichero = File.OpenText(nombre_fichero);
+				fichero2 = File.CreateText(nombre_fichero.Substring(0, nombre_fichero.Length-4) + ".conv");
+			}
+			catch(Exception e) { }
 
-			string linea  = " ";
-            string linea2 = " ";
-            if (fichero != null && fichero2 != null){
-                while ((linea = fichero.ReadLine()) != null)
-                {
-                    if ((linea.IndexOf("insert into ") >= 0) && (linea.Substring(0, 12) == "insert into "))
-                    {
-                        linea2 = comprimirEspacios(linea.Substring(12, linea.IndexOf(";") - 12));
-                        if (linea2 != "")
-                            functBaseDatos(linea2);
-                    }
-                }
-                fichero.Close();
-                fichero2.Close();
-            }
-            else {
-                Console.WriteLine("Fichero no existente");
-            }
+			string tokenInsert = "insert into ";
+			string linea = " ";
+			string linea2 = " ";
+
+			if (fichero != null && fichero2 != null) {
+				while ((linea = fichero.ReadLine()) != null)
+				{
+					if ((linea.IndexOf(tokenInsert) >= 0) && (linea.Substring(0, tokenInsert.Length) == tokenInsert))
+					{
+						linea2 = comprimirEspacios(linea.Substring(tokenInsert.Length, linea.IndexOf(";") - tokenInsert.Length), '\'');
+						if (linea2 != "")
+							functInsert(linea2);
+					}
+				}
+
+				fichero.Close();
+				fichero2.Close();
+			}
+			else {
+				Console.WriteLine("Fichero no existente");
+			}
 		}
 
-        static string comprimirEspacios(string newString)
-        {
-            StringBuilder nuova = new StringBuilder();
+		static string comprimirEspacios(string newString, char stringDelimiter)
+		{
+			StringBuilder nuova = new StringBuilder();
             bool flag = false;
 
             for (int i = 0; i < newString.Length; i++)
             {
-                if (newString[i] == '\'' && (flag == false))
+                if (newString[i] == stringDelimiter && (flag == false))
                 {
                     nuova.Append(newString[i]);
                     flag = true;
                 }
-                else if (newString[i] == '\'' && (flag == true))
+                else if (newString[i] == stringDelimiter && (flag == true))
                 {
                     nuova.Append(newString[i]);
                     flag = false;
@@ -76,9 +79,9 @@ namespace Examen_tema8_ej1
             }
 
             return nuova.ToString();
-        }
+		}
 
-        static int functBaseDatos(string newString)
+        static int functInsert(string newString)
 		{
 			string buscar1 = ")value(";
             string buscar2 = "(";
@@ -110,8 +113,8 @@ namespace Examen_tema8_ej1
             string camp = primeraParte.Substring(index2);
             string val  = newString.Substring(index1 + buscar1.Length-1);
 
-            string[] campos = separaPalabras(camp.Substring(1, camp.Length-2));
-            string[] valores = separaPalabras(val.Substring(1, val.Length-2));
+            string[] campos  = separaPalabras(camp.Substring(1, camp.Length-2), ',', '\'');
+            string[] valores = separaPalabras( val.Substring(1,  val.Length-2), ',', '\'');
 
 			if(campos.Length != valores.Length){
 				fichero2.WriteLine("Error el numero de campos es diferente desde el numero de valores");
@@ -130,7 +133,7 @@ namespace Examen_tema8_ej1
 			}
 		}
 
-		static string[] separaPalabras(string palabras)
+		static string[] separaPalabras(string palabras, char delimiter, char stringDelimiter)
 		{
 			List<string> listPalabras = new List<string>();
             StringBuilder nuova = new StringBuilder();
@@ -138,17 +141,17 @@ namespace Examen_tema8_ej1
 
             for (int i = 0; i < palabras.Length; i++)
             {
-                if (palabras[i] == '\'' && (flag == false))
+                if (palabras[i] == stringDelimiter && (flag == false))
                 {
                     nuova.Append(palabras[i]);
                     flag = true;
                 }
-                else if (palabras[i] == '\'' && (flag == true))
+                else if (palabras[i] == stringDelimiter && (flag == true))
                 {
                     nuova.Append(palabras[i]);
                     flag = false;
                 }
-                else if ((palabras[i] == ',') && (flag == false))
+                else if ((palabras[i] == delimiter) && (flag == false))
                 {
                     listPalabras.Add(nuova.ToString());
                     nuova.Remove(0, nuova.Length);

@@ -1,0 +1,4 @@
+insert into tabla (fgs,typ, 45,weq89) value ('ciao ciao','uon, due,tre!',fgh,56);
+insert into tabla (fgs,typ, 45,weq89) value ('ciao ciao','uon, due,tre!',fgh,56);
+insert into tabla (fgs,typ, 45,weq89) value ('ciao ciao','uon, due,tre!',fgh,56);
+insert into segunda (primo, secondo,terzo,quarto) value ('ciao ciao','uon, due,tre!',fgh,56);

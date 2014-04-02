@@ -8,13 +8,12 @@ namespace arraylist_union_intersection
 {
 	class Program
 	{
-
 		static void Main(string[] args)
 		{
 			List<int> ListaA;
 			List<int> ListaB;
-			ListaA = new List<int>(){3, 5, 7, 8, 9};
-			ListaB = new List<int>(){2, 7, 9};
+			ListaA = new List<int>() { 3, 5, 7, 8, 9 };
+			ListaB = new List<int>() { 2, 7, 9 };
 
 			Console.Write("A = ");
 			foreach (int elemento in ListaA)
@@ -26,7 +25,6 @@ namespace arraylist_union_intersection
 				Console.Write(elemento + ", ");
 			Console.WriteLine();
 			Console.WriteLine();
-
 
 			Console.Write("C = A U B = ");
 			foreach (int elemento in union(ListaA, ListaB))
@@ -43,14 +41,27 @@ namespace arraylist_union_intersection
 				Console.Write(elemento + ", ");
 			Console.WriteLine();
 
+			Console.Write("F = A - B = ");
+			foreach (int elemento in diferencia(ListaA, ListaB))
+				Console.Write(elemento + ", ");
+			Console.WriteLine();
 
+			Console.Write("G = (A U B) - (A intersection B) = ");
+			foreach (int elemento in diferencia(union(ListaA, ListaB), interseccion(ListaA, ListaB)))
+				Console.Write(elemento + ", ");
+			Console.WriteLine();
+
+			
+			
+			Console.WriteLine("pulse una tecla ...");
+			Console.ReadKey();
 		}
 
 		static List<int> union(List<int> A, List<int> B)
 		{
 			List<int> C = new List<int>() { };
 
-			C = A;
+			C.AddRange(A);
 			C.AddRange(B);
 			C.Sort();
 
@@ -67,16 +78,12 @@ namespace arraylist_union_intersection
 			return C;
 		}
 
-
 		static List<int> suma(List<int> A, List<int> B)
 		{
-			List<int> C = new List<int>() {};
+			List<int> C = new List<int>() { };
 
-			foreach (int elementoA in A)
-				C.Add(elementoA);
-			foreach (int elementoB in B)
-				C.Add(elementoB);
-
+			C.AddRange(A);
+			C.AddRange(B);
 			C.Sort();
 
 			return C;
@@ -86,14 +93,12 @@ namespace arraylist_union_intersection
 		{
 			List<int> C = new List<int>() { };
 
-			for (int i = 0; i < A.Count; i++)
+			foreach (int elementoA in A)
 			{
-				for (int j = 0; j < B.Count; j++)
+				foreach(int elementoB in B)
 				{
-					if (A[i] == B[j])
-					{
-						C.Add(A[i]);
-					}
+					if (elementoA == elementoB)
+						C.Add(elementoA);
 				}
 			}
 
@@ -104,13 +109,18 @@ namespace arraylist_union_intersection
 		{
 			List<int> C = new List<int>() { };
 
-			for (int i = 0; i < A.Count; i++)
+			C.AddRange(A);
+
+			int num;
+			foreach(int elementoB in B)
 			{
-				for (int j = 0; j < B.Count; j++)
+				num = C.Count;
+				for (int i = 0; i < num; i++)
 				{
-					if (A[i] == B[j])
+					if (C[i] == elementoB)
 					{
-						C.Add(A[i]);
+						C.RemoveAt(i);
+						num--;
 					}
 				}
 			}

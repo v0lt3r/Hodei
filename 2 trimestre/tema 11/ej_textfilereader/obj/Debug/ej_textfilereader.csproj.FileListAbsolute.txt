@@ -1,1 +1,7 @@
 C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\ej_textfilereader\bin\Debug\ej_textfilereader.exe.config
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\ej_textfilereader\bin\Debug\ej_textfilereader.exe.config
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\ej_textfilereader\bin\Debug\ej_textfilereader.exe
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\ej_textfilereader\bin\Debug\ej_textfilereader.pdb
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\ej_textfilereader\obj\Debug\ej_textfilereader.csprojResolveAssemblyReference.cache
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\ej_textfilereader\obj\Debug\ej_textfilereader.exe
+\\psf\Home\Dropbox\mis-ejercicios\2 trimestre\tema 11\ej_textfilereader\obj\Debug\ej_textfilereader.pdb

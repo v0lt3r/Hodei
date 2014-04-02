@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_pares_impares\bin\Debug\arraylist_pares_impares.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_pares_impares\bin\Debug\arraylist_pares_impares.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_pares_impares\bin\Debug\arraylist_pares_impares.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_pares_impares\obj\Debug\arraylist_pares_impares.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_pares_impares\obj\Debug\arraylist_pares_impares.exe
+C:\Users\volter\Dropbox\mis-ejercicios\2 trimestre\tema 11\arraylist_pares_impares\obj\Debug\arraylist_pares_impares.pdb

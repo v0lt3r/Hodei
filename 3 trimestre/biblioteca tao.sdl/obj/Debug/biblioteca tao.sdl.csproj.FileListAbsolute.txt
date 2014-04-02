@@ -1,0 +1,7 @@
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\biblioteca tao.sdl\bin\Debug\biblioteca tao.sdl.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\biblioteca tao.sdl\bin\Debug\biblioteca tao.sdl.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\biblioteca tao.sdl\bin\Debug\biblioteca tao.sdl.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\biblioteca tao.sdl\bin\Debug\Tao.Sdl.dll
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\biblioteca tao.sdl\obj\Debug\biblioteca tao.sdl.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\biblioteca tao.sdl\obj\Debug\biblioteca tao.sdl.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\biblioteca tao.sdl\obj\Debug\biblioteca tao.sdl.pdb

@@ -1,2 +1,7 @@
 prueba;5
 prueba;5
+prueba;5
+juanito;6
+prueba2;4
+
+prueba2;3

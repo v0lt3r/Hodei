@@ -1,0 +1,6 @@
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\csharp_pascal\csharp_pascal\bin\Debug\csharp_pascal.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\csharp_pascal\csharp_pascal\bin\Debug\csharp_pascal.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\csharp_pascal\csharp_pascal\bin\Debug\csharp_pascal.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\csharp_pascal\csharp_pascal\obj\Debug\csharp_pascal.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\csharp_pascal\csharp_pascal\obj\Debug\csharp_pascal.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\csharp_pascal\csharp_pascal\obj\Debug\csharp_pascal.pdb

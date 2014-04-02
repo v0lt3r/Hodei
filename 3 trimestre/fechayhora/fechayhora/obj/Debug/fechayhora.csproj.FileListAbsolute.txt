@@ -1,0 +1,9 @@
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\bin\Debug\fechayhora.exe.config
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\bin\Debug\fechayhora.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\bin\Debug\fechayhora.pdb
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\obj\Debug\fechayhora.csprojResolveAssemblyReference.cache
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\obj\Debug\fechayhora.Form1.resources
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\obj\Debug\fechayhora.Properties.Resources.resources
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\obj\Debug\fechayhora.csproj.GenerateResource.Cache
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\obj\Debug\fechayhora.exe
+C:\Users\volter\Dropbox\mis-ejercicios\3 trimestre\fechayhora\fechayhora\obj\Debug\fechayhora.pdb

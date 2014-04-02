@@ -23,7 +23,7 @@ public class Ejemplo46
         {
             File.CreateText("prueba.txt");
         }
-
+		//File.CreateText("prueba2.txt");
         StreamWriter fichero;
         string linea = "";
         StreamReader fichero_origen;
@@ -39,6 +39,7 @@ public class Ejemplo46
             Console.WriteLine("4.- Ver datos de un fichero");
             Console.WriteLine("5.- buscar un fragmento de un fichero");
             Console.WriteLine("6.- borrar un dato");
+            Console.WriteLine("7.- modificar un dato por su indice");
             Console.WriteLine("0.- Salir");
             opcion = Convert.ToInt32(Console.ReadLine());
 
@@ -81,7 +82,7 @@ public class Ejemplo46
                         }
 
                         fichero = File.AppendText("prueba.txt");
-                        fichero.WriteLine(tempnombre + ";" + temptamanyo);
+                        fichero.WriteLine("\n"+tempnombre + ";" + temptamanyo);
                         fichero.Close();
                         /* Y ya tenemos una ficha más */
                     }
@@ -94,7 +95,7 @@ public class Ejemplo46
                     do
                     {
                         linea = fichero_origen.ReadLine();
-                        if (linea != null)
+                        if (linea != null && linea != "")
                         {                      
                             Console.WriteLine("Nombre: {0} Tamaño: {1} KB", linea.Split(';')[0], linea.Split(';')[1]);
                         }
@@ -111,7 +112,7 @@ public class Ejemplo46
                     do
                     {
                         linea = fichero_origen.ReadLine();
-                        if (linea != null)
+                        if (linea != null && linea != "")
                         {
                             if (Convert.ToInt32(linea.Split(';')[1]) >= tamanyoBuscar)
                             Console.WriteLine("Nombre: {0} Tamaño: {1} KB", linea.Split(';')[0], linea.Split(';')[1]);
@@ -129,7 +130,7 @@ public class Ejemplo46
                     do
                     {
                         linea = fichero_origen.ReadLine();
-                        if (linea != null)
+                        if (linea != null && linea != "")
                         {   
                             if (textoBuscar == linea.Split(';')[0])
                             Console.WriteLine("Nombre: {0} Tamaño: {1} KB", linea.Split(';')[0], linea.Split(';')[1]);
@@ -140,67 +141,79 @@ public class Ejemplo46
                     break;
 
                 case 5: // buscar un fragmento
-                    string textobuscar = "";
-                    string nombremin = "";
-                    Console.WriteLine("escriba un fragmento del texto a buscar: ");
-                    textobuscar = Console.ReadLine();
-                    textobuscar = textobuscar.ToLower();
-                    for (i = 0; i < numeroFichas; i++)
+					
+                    fichero_origen = File.OpenText("prueba.txt");
+                    Console.WriteLine("¿Por que fragmento deseas buscar?");
+                    textoBuscar = Console.ReadLine().ToLower();
+                    do
                     {
-                        nombremin = fichas[i].nombreFich.ToLower();
-                        if (nombremin.Contains(textobuscar))
-                            Console.WriteLine("Nombre: {0}; Tamaño: {1} KB", fichas[i].nombreFich, fichas[i].tamanyo);
-                    }
-                    break;
-                case 6: //borrar un dato
-                    string datoborrar = "";
-                    int indice = -1;
-                    Console.WriteLine("escriba el dato a borrar: ");
-                    datoborrar = Console.ReadLine();
-                    for (i = 0; i < numeroFichas && indice == -1 ; i++) //si indice es -1 es que no lo ha encontrado y no ha llegado al final, entonces sigo buscando.
-                    {
-                        if (fichas[i].nombreFich == datoborrar)
-                        {
-                            indice = i;          
+                        linea = fichero_origen.ReadLine();
+                        if (linea != null && linea != "")
+                        {   
+                            if (linea.Split(';')[0].Contains(textoBuscar))
+                            Console.WriteLine("Nombre: {0} Tamaño: {1} KB", linea.Split(';')[0], linea.Split(';')[1]);
                         }
-                    }
-                    if (indice >= 0)
-                    {
-                        for (i = indice; i < numeroFichas; i++)
-                        {
-                            fichas[i] = fichas[i+1];
-                        }
-                        numeroFichas--;
-                    }
+                    } while (linea != null);
+                    fichero_origen.Close();                                          
                     break;
-                case 7:
-                    string datoborrar2 = "";
-                    int indice2 = -1;
 
-                    Console.WriteLine("escriba el indice del dato a borrar: ");
-                    int.TryParse(Console.ReadLine(), out indice2);
-                    if (numeroFichas < indice2 || indice2 < 0)
+                case 6: //borrar un dato
+
+                    fichero_origen = File.OpenText("prueba.txt");
+					List<string> lista = File.ReadAllLines("prueba.txt").ToList();
+                    fichero_origen.Close();
+                    Console.WriteLine("¿que texto deseas borrar?");
+                    textoBuscar = Console.ReadLine().ToLower();
+
+                    fichero = File.CreateText("prueba.txt");
+
+                    foreach (string dato in lista)
                     {
-                        Console.WriteLine("error, el indice no existe");
+                        if (dato.Split(';')[0] != textoBuscar)
+                            fichero.WriteLine(dato);
+                    }
+
+                    fichero.Close();
+                              
+                    break;
+
+                case 7: // modificar un dato por su indice
+
+                    int indice = 0;
+                    string nombreaux = "";
+                    Console.WriteLine("Que indice desea borrar?");
+                    int.TryParse(Console.ReadLine(), out indice);
+
+                    fichero_origen = File.OpenText("prueba.txt");
+					List<string> lista2 = File.ReadAllLines("prueba.txt").ToList();
+                    fichero_origen.Close();
+
+                    if (indice < lista2.Count)
+                    {
+                        fichero = File.CreateText("prueba.txt");
+                        for (int k = 0; k < lista2.Count; k++)
+                        {
+                            if (indice == k + 1)
+                            {
+                                Console.WriteLine(lista2[k].Split(';')[0]);
+                                Console.WriteLine("escriba el nuevo nombre:");
+                                nombreaux = Console.ReadLine();
+                                if (nombreaux != "")
+                                {
+                                    lista2[k] = nombreaux + ";" + lista2[k].Split(';')[1];
+                                }
+                            }
+
+                            fichero.WriteLine(lista2[k]);
+                        }
+
+                        fichero.Close();
                     }
                     else
-                    {
-                        Console.WriteLine("Nombre: {0}; Tamaño: {1} KB", fichas[indice2].nombreFich, fichas[indice2].tamanyo);
-                        string nombreaux = "";
-                        string tamanyoaux = "";
-                        Console.WriteLine("escriba el nuevo nombre del fichero");
-                        nombreaux = Console.ReadLine();
-                        if (nombreaux != "")
-                        {
-                            fichas[indice2].nombreFich = nombreaux;
-                        }
-                        Console.WriteLine("escriba el nuevo tamaño del fichero");
-                        tamanyoaux = Console.ReadLine();            
-                        if (tamanyoaux != "")
-                        {
-                            fichas[indice2].tamanyo = Convert.ToInt32(tamanyoaux);
-                        }
-                    }            
+                        Console.WriteLine("el indice no existe");
+
+                    
+
                     break;
                 case 0: /* Salir: avisamos de que salimos */
                     Console.WriteLine("Fin del programa");
